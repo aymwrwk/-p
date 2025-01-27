@@ -1,45 +1,143 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ִֶָ𓂃 ࣪˖ ִֶָ🐇་༘࿐</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pamela's Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf1f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #fbc6d5;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 5px solid #f89aaa;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #944c5e;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #ffe2ea;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #944c5e;
+            font-weight: bold;
+            padding: 8px 12px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            border-color: #f89aaa;
+            background-color: #fbc6d5;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #fff;
+            padding: 15px;
+            border: 2px dashed #f89aaa;
+            border-radius: 10px;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #944c5e;
+        }
+
+        .content {
+            flex: 3;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #fbc6d5;
+        }
+
+        .content h2 {
+            margin-top: 0;
+            color: #944c5e;
+        }
+
+        .journal-entry {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 2px dotted #fbc6d5;
+            border-radius: 10px;
+            background-color: #ffe2ea;
+        }
+
+        .journal-entry h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #fbc6d5;
+            color: #944c5e;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <center>
-            <div class="header">
-
-            </div>
-        </center>
+        <h1>Pamela's Website</h1>
     </header>
-
-    <main>
-        <center>
-            <div class="main">
-               <h1 class="h1-titulo-main">Lorem <span>ipsum</span> dolor <span>sit</span> (｡˃ ᵕ ˂ )</h1>
-               <br>
-               <p class="p-01-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquid reiciendis unde eveniet doloremque repudiandae. Aliquam, similique doloribus incidunt, impedit, harum animi nemo dolorem maxime optio corporis perspiciatis libero iure.</p>
-               <p class="p-02-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquid reiciendis unde eveniet doloremque repudiandae. Aliquam, similique doloribus incidunt, impedit, harum animi nemo dolorem maxime optio corporis perspiciatis libero iure.</p>
-               <p class="p-03-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquid reiciendis unde eveniet doloremque repudiandae. Aliquam, similique doloribus incidunt, impedit, harum animi nemo dolorem maxime optio corporis perspiciatis libero iure.</p>
-
-               <div class="audios">
-                <audio class="audio-01-main" controls>
-                    <source src="videos/que-isso-joao.mov" type="audio/mp3" />
-                  </audio>
-                  <br>
-                  <audio class="audio-02-main" controls>
-                    <source src="videos/que-isso-joao.mov" type="audio/mp3" />
-                  </audio>
-                  <br>
-                  <audio class="audio-03-main" controls>
-                    <source src="videos/que-isso-joao.mov" type="audio/mp3" />
-                  </audio>
-               </div>
-
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Comics</a>
+        <a href="#">Commissions</a>
+        <a href="#">Journal</a>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Journal</h2>
+            <p><strong>Latest Journal Updates:</strong></p>
+            <ul>
+                <li>November 4th, 2023</li>
+                <li>October 11th, 2023</li>
+            </ul>
+            <p><strong>Mood:</strong> Excited</p>
+            <p><strong>Listening to:</strong> Chill Beats</p>
+            <p><strong>Thinking about:</strong> Upcoming Commissions</p>
+        </aside>
+        <section class="content">
+            <h2>4th of November, 2023</h2>
+            <div class="journal-entry">
+                <p>Hello! It's November and here's a new journal entry!</p>
+                <p>Ko-fi commissions open November 10th. Reserve your spot now!</p>
+                <img src="your-image-url.jpg" alt="Ko-fi Commissions" style="width: 100%; border-radius: 10px;">
             </div>
-        </center>
-    </main>
+        </section>
+    </div>
+    <footer>
+        &copy; 2023 Pamela's Website. All Rights Reserved.
+    </footer>
 </body>
 </html>
