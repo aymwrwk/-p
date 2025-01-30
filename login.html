@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('img/thumb-1920-1323582.png') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .login-container {
+         
+            padding: 20px;
+           
+            text-align: center;
+            width: 300px;
+        }
+        input {
+            border: none;
+            display: block;
+            width: 93%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background: #ffccdd;
+            color: #fff;
+        }
+        
+        input#password{
+            border: none;
+        }
+
+        button {
+            width: 80%;
+            padding: 10px;
+            background: #ffccdd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #ff99bb;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="password" id="password" placeholder="Digite a senha">
+        <button onclick="checkPassword()">Entrar</button>
+    </div>
+    <script>
+        function checkPassword() {
+            const correctPassword = "1234"; // Defina a senha correta aqui
+            const enteredPassword = document.getElementById("password").value;
+            
+            if (enteredPassword === correctPassword) {
+                alert("Login bem-sucedido!");
+                window.location.href = "dashboard.html"; // Página de destino após login
+            } else {
+                alert("Senha incorreta! Tente novamente.");
+            }
+        }
+    </script>
+</body>
+</html>
