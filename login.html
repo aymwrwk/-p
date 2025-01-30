@@ -5,66 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            height: 100%;
+        }
+
         body {
+            backdrop-filter: blur(5px);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('img/thumb-1920-1323582.png') no-repeat center center/cover;
+            background: url('img/png-clipart-lolita-fashion-graphic-design-internet-forum-art-anime-sakura-calendar-template-love-miscellaneous-removebg-preview.png') no-repeat center center/cover;
             font-family: Arial, sans-serif;
             color: #fff;
         }
+
         .login-container {
-         
-            padding: 20px;
-           
+            background: rgba(0, 0, 0, 0.767);
+           backdrop-filter: blur(500px);
             text-align: center;
-            width: 300px;
+            width: 50vw;
+            height: 30vh;
+            
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+           
         }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
         input {
             border: none;
             display: block;
-            width: 93%;
-            margin: 10px 0;
-            padding: 10px;
+            width: 80%;
+            margin: 10px 70px;
+            padding: 15px;
             border-radius: 5px;
-            background: #ffccdd;
+            background: rgba(36, 33, 33, 0.2);
             color: #fff;
+            font-size: 1em;
+            outline: none;
         }
-        
-        input#password{
-            border: none;
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
         }
 
         button {
-            width: 80%;
-            padding: 10px;
-            background: #ffccdd;
-            color: white;
             border: none;
-            border-radius: 5px;
+            font-size: 1.7em;
+            width: 20%;
+            padding: 12px;
+            background: #FDCFCC;
+            color: #fff;
             cursor: pointer;
             font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
         }
+
         button:hover {
-            background: #ff99bb;
+            background: #FDCFCC;
+            color: #fff;
         }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+        }
+
     </style>
 </head>
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <input type="password" id="password" placeholder="Digite a senha">
-        <button onclick="checkPassword()">Entrar</button>
+        <input type="password" id="password" placeholder="Digite sua senha">
+        <button onclick="checkPassword()">☽</button>
     </div>
     <script>
         function checkPassword() {
-            const correctPassword = "1234"; // Defina a senha correta aqui
+            const correctPassword = "1234"; // Senha correta
             const enteredPassword = document.getElementById("password").value;
             
             if (enteredPassword === correctPassword) {
                 alert("Login bem-sucedido!");
-                window.location.href = "dashboard.html"; // Página de destino após login
+                window.location.href = "index.html"; // Página de destino após login
             } else {
                 alert("Senha incorreta! Tente novamente.");
             }
