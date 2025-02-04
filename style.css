@@ -1,0 +1,88 @@
+/* Definindo o estilo do body com o wallpaper */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background-image: url('img/229124.jpg'); /* Imagem de fundo (substitua pelo seu link de wallpaper) */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Impede que o conteúdo ultrapasse a tela */
+}
+
+/* Estilo do container de login */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4); /* Adiciona sombra para profundidade */
+    transform: translateY(50px);
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+/* Animação para o formulário */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo dos campos de input */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 2px;
+border: none;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo suave para os inputs */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efeito de foco nos campos de input */
+input:focus {
+    border-color: #4CAF50; /* Verde brilhante */
+    background-color: rgba(255, 255, 255, 0.2); /* Foco com cor mais intensa */
+    outline: none;
+}
+
+/* Estilo do botão de login */
+button {
+    width: 50%;
+    padding: 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito de hover e clique no botão */
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Elevação ao passar o mouse */
+}
+
+button:active {
+    transform: translateY(2px); /* Pressiona para baixo */
+}
