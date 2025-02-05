@@ -1,20 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Finance</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <input type="password" id="password" placeholder="Digite a senha" required>
-      <button type="submit"></button>
-    </form>
-  </div>
-
-  <script src="script.js"></script>
+    <div class="sidebar">
+        <h2>Mini Finance</h2>
+        <ul>
+            <li class="active">Overview</li>
+            <li>My Wallet</li>
+            <li>Profile</li>
+            <li>Settings</li>
+            <li>Help Center</li>
+        </ul>
+        <button class="upgrade-btn">Upgrade</button>
+        <button class="logout">Logout</button>
+    </div>
+    <div class="main-content">
+        <header>
+            <input type="text" placeholder="Search...">
+            <img src="profile.jpg" alt="Profile" class="profile-pic">
+        </header>
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>Hello Thomas, welcome back!</p>
+            <div class="balance-card">
+                <h3>Your Balance</h3>
+                <h1>$254,800</h1>
+                <p>**** **** **** 2560</p>
+                <p>Valid Date: 12/2028</p>
+                <p>Card Holder: Thomas</p>
+            </div>
+        </section>
+        <section class="history">
+            <h3>History</h3>
+            <section class="user-info centered">
+              <div class="white-container profile-details">
+                  <img src="" alt="User Profile" class="profile-pic-large">
+                  <div class="info">
+                      <p><strong>Name:</strong> Thomas Edison</p>
+                      <p><strong>Email:</strong> thomas@site.com</p>
+                      <p><strong>Phone:</strong> (60) 12 345 6789</p>
+                  </div>
+              </div>
+          </section>
+            
+        </section>
+        <section class="actions">
+            <h3>Quick Actions</h3>
+            <div class="white-container">
+                <div class="action-buttons">
+                    <button>Top Up</button>
+                    <button>Scan & Pay</button>
+                    <button>Send</button>
+                    <button>Request</button>
+                </div>
+            </div>
+        </section>
+        <section class="transactions">
+            <h3>Recent Transactions</h3>
+            <div class="white-container">
+                <div class="transaction">
+                    <p>Daniel Jones - Q20 Transfer</p>
+                    <span class="expense">- $250</span>
+                </div>
+                <div class="transaction">
+                    <p>Public Bank - Mobile Reload</p>
+                    <span class="income">+ $280</span>
+                </div>
+            </div>
+        </section>
+        
+    </div>
 </body>
 </html>

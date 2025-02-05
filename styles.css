@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f5f6fa;
+}
+
+.sidebar {
+    width: 300px;
+    background: #ffffff;
+    padding: 20px;
+ 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    position: relative;
+    top: 120px;
+    color: #333;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.sidebar ul li.active, .sidebar ul li:hover {
+    background: #2ecc71;
+    color: white;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    
+    top: -20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 105%;
+    background: white;
+    padding: 15px 25px;
+    
+    margin-bottom: 20px;
+}
+
+header input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+header input:hover {
+   
+}
+
+.profile-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.overview, .history {
+    width: 90%;
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    
+}
+
+.balance-card {
+    background: #e3fcef;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+   
+}
+
+.white-container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+   
+    width: 100%;
+}
+
+.action-buttons button {
+    background: #2ecc71;
+    border: none;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.action-buttons button:hover {
+    background: #27ae60;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.expense {
+    color: red;
+}
+
+.income {
+    color: green;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.profile-pic-large {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2ecc71;
+}
