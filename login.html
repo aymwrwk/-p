@@ -48,7 +48,7 @@
     <script>
         // Função para alternar entre tema claro e escuro
         function toggleTheme() {
-            const currentTheme = document.body.classList.contains('light') ? 'light' : 'dark';
+            const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
             document.body.classList.toggle('light', currentTheme === 'dark');
             document.body.classList.toggle('dark', currentTheme === 'light');
             const icon = document.querySelector('.theme-toggle svg');
@@ -94,7 +94,7 @@
             
             const img = document.createElement('img');
             img.src = imageSrc;
-            img.style.width = "150px";
+            img.style.width = "300px";
             img.style.margin = "10px";
             img.style.borderRadius = "8px";
             
@@ -146,7 +146,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #2b2b2b;
+            
             padding: 60px;
             width: 100%;
 
