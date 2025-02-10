@@ -10,7 +10,12 @@
 </head>
 <body class="dark">
     <header>
-        <div class="logo"></div>
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <nav class="menu" id="menu">
+            <a href="#">Página 1</a>
+            <a href="#">Página 2</a>
+            <a href="#">Página 3</a>
+        </nav>
         <div class="buttons">
         
             <!-- Botão de modo escuro (no canto superior direito) -->
@@ -26,25 +31,21 @@
         <div class="container">
             <div class="box">Container 1
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores similique porro voluptatum itaque nisi odio a temporibus perferendis. Dolor, est! Fuga voluptatibus nisi doloribus harum eius? Ipsam, voluptatum distinctio?</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores similique porro voluptatum itaque nisi odio a temporibus perferendis. Dolor, est! Fuga voluptatibus nisi doloribus harum eius? Ipsam, voluptatum distinctio?</p>
             </div>
 
-            <div class="box">Container 2
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores similique porro voluptatum itaque nisi odio a temporibus perferendis. Dolor, est! Fuga voluptatibus nisi doloribus harum eius? Ipsam, voluptatum distinctio?</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores similique porro voluptatum itaque nisi odio a temporibus perferendis. Dolor, est! Fuga voluptatibus nisi doloribus harum eius? Ipsam, voluptatum distinctio?</p>
-            </div>
-
-            <div class="box">Container 3
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores similique porro voluptatum itaque nisi odio a temporibus perferendis. Dolor, est! Fuga voluptatibus nisi doloribus harum eius? Ipsam, voluptatum distinctio?</p>
-            </div>
+           
         </div>
         <label for="upload" class="custom-file-upload">upload</label>
         <input type="file" id="upload" accept="image/*">
         <div id="gallery"></div>
     </main>
+
+<script>
+     function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+</script>
+
     <script>
         // Função para alternar entre tema claro e escuro
         function toggleTheme() {
@@ -131,6 +132,43 @@
             transition: background-color 0.3s, color 0.3s;
         }
 
+
+        .menu-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2em;
+            cursor: pointer;
+        }
+
+        .menu {
+
+            position: absolute;
+            top: 15px;
+           left: 0px;
+            background: #222;
+            width: 150px;
+            padding: 10px;
+            display: none;
+            flex-direction: column;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        .menu a:hover {
+            background: #444;
+        }
+
+        .menu.show {
+            display: flex;
+        }
+
         body.dark {
             background-color: #1b1b1b;
             color: white;
@@ -141,6 +179,10 @@
             color: black;
         }
 
+        body.light .box {
+    background-color: white;
+    color: black;
+}
         header {
             
             display: flex;
@@ -194,10 +236,12 @@
         }
 
         .box {
+       
+          
             background-color: #333;
             padding: 20px;
             border-radius: 8px;
-            width: 300px;
+            width: 400px;
             text-align: center;
             color: white;
         }
@@ -232,6 +276,7 @@
         }
 
         .image-wrapper {
+           
             display: flex;
             flex-direction: column;
             align-items: center;
