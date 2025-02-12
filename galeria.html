@@ -4,8 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi vitae temporibus est, maxime unde possimus repellat minus ab dolore deserunt quis. Voluptates temporibus libero eius ad ipsa, adipisci quibusdam quaerat!</p>
+    <div className="header">
+        <header class="header-menu">
+          <nav>
+            <ul class="menu">
+              <li><a href="/inicio">Inicio</a></li>
+              <li><a href="/prefixo">Prefixos</a></li>
+            </ul>
+          </nav>
+        </header>
+  
+        <div className="titl">
+          <div className="imagem-titulo">
+          </div>
+        </div>
+        <div className="container-contador2">
+        </div>
+        <div className="pedido-container2">
+          <ul>
+  <br />
+         
+  
+                <div className="conteudo-wrapper2" key={pedido.reference_id}>
+              
+  
+  
+  
+                  <div className="div-checkbox">
+                    <div className="checkbox-container">
+                      <div className="checkbox-container2">
+                      <label className="label-pronto2">
+                        
+                          <h1 className="texto-pronto">Pronto</h1>
+                        </label>
+                        <label className="label-entregue2">
+                          
+                          <h1 className="texto-entregue2">Entregue</h1>
+                        </label>
+                        <label className="label-cancelar2">
+                         
+                          <h1 className="texto-cancelar2">Cancelar</h1>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+  
+  
+                  <div className="conteudo-detalhes">
+  
+                    <div className="status-container2">
+                      <div className={`indicador-status2 ${pedido.status}`></div>
+                    </div>
+  
+                    <div className="quantidade-all2">
+                      <h2 className="quantidadeTexto">Quantidade</h2>
+                      <h2 className="quantidade">{pedido.quantity}</h2>
+                    </div>
+                    <div className="senha-all4">
+                      <h2 className="senhaTexto3">Senha</h2>
+                      <h1 className="senha3" >{pedido.reference_id}</h1>
+                    </div>
+  
+                    <div className="horario">
+  
+                    <h1 className="hora">{pedido.hora.split(':').slice(0, 2).join(':')}</h1>
+                    <h1 className="horario-texto">Horário</h1>
+            
+                    </div>
+                    <div className="div-descricao">
+                      <p className="descricao">{pedido.description}</p>
+                    </div>
+  
+                  </div>
+                </div>
+            
+          </ul>
+          <p className="mensagem-sem-pedidos1">Ainda não há pedidos entregues ou cancelados</p>
+        </div>
+        <div className="div-containers-lista2">
+          <div className="container-lista2">
+            <div className="contagem-pedidos">
+              <ul className="ul-pedidos">
+                {contagem.map((item, index) => (
+                  <li className="li-pedidos" key={index}>{item}</li>
+  
+                ))}
+  
+  
+              </ul>
+            </div>
+          </div>
+          <div className="container-lista2"></div>
+        </div>
+      </div>
 </body>
 </html>
