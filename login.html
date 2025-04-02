@@ -1,378 +1,128 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site de Imagens</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Link para os ícones do Google Fonts -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body class="dark">
-   <header>
-         <!-- <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
-        <nav class="menu" id="menu">
-            <a href="#">Página 1</a>
-            <a href="#">Página 2</a>
-            <a href="#">Página 3</a>
-        </nav>-->
-        <div class="buttons">
-        
-            <!-- Botão de modo escuro (no canto superior direito) -->
-            <button class="theme-toggle" onclick="toggleTheme()">
-                <!-- Ícone SVG (adicionei o seu SVG aqui) -->
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                    <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"/>
-                </svg>
-            </button>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-         
-        </div>
-        <button class="toggle-folder" onclick="toggleImageFolder()">Pasta 1</button>
-        <div id="image-folder" class="hidden">
-            <img src="img/ff4d7bdfafe809fc9ac11e6e629fd7b1.jpg" alt="Imagem 1">
-            <img src="" alt="Imagem 2">
-            <img src="https://via.placeholder.com/300" alt="Imagem 3">
-        </div>
-        <label for="upload" class="custom-file-upload">upload</label>
-        <input type="file" id="upload" accept="image/*">
-        <div id="gallery"></div>
-    </main>
+<html><head>
+    <title>Template Empresa de jogos | WIX</title>
+    
+    <!-- BEGIN SENTRY -->
+    <script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/identify_45dd5971.js"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MWY1YTg3NzcyNA.js" data-id="C3SI0CO4C3S2QIOV7NI0"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MWY1YTg3NzcyNA.js" data-id="CKA47TJC77U7REM9C0R0"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-1041825691&amp;l=dataLayer&amp;cx=c&amp;gtm=45je52d0v9123674316za200zb6319694"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-1006927621&amp;l=dataLayer&amp;cx=c&amp;gtm=45je52d0v9123674316za200zb6319694"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=DC-4382365&amp;l=dataLayer&amp;cx=c&amp;gtm=45je52d0v9123674316za200zb6319694"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C3SI0CO4C3S2QIOV7NI0&amp;lib=ttq"></script><script src="https://s.yimg.com/wi/ytc.js" async=""></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CKA47TJC77U7REM9C0R0&amp;lib=ttq"></script><script src="https://connect.facebook.net/signals/config/704136006388169?v=2.9.183&amp;r=stable&amp;domain=pt.wix.com&amp;hme=bee25cb0600224fcc4f0d196cf8b317f393971b6cb1ab6b3c683da99b92af569&amp;ex_m=70%2C122%2C107%2C111%2C61%2C4%2C100%2C69%2C16%2C97%2C89%2C51%2C54%2C173%2C176%2C188%2C184%2C185%2C187%2C29%2C101%2C53%2C77%2C186%2C168%2C171%2C181%2C182%2C189%2C132%2C41%2C191%2C192%2C34%2C144%2C15%2C50%2C197%2C196%2C134%2C18%2C40%2C1%2C43%2C65%2C66%2C67%2C71%2C93%2C17%2C14%2C96%2C92%2C91%2C108%2C52%2C110%2C39%2C109%2C30%2C94%2C26%2C169%2C172%2C141%2C86%2C56%2C84%2C33%2C73%2C0%2C95%2C32%2C28%2C82%2C83%2C88%2C47%2C46%2C87%2C37%2C11%2C12%2C13%2C6%2C7%2C25%2C22%2C23%2C57%2C62%2C64%2C75%2C102%2C27%2C76%2C9%2C8%2C80%2C48%2C21%2C104%2C103%2C105%2C98%2C10%2C20%2C3%2C38%2C74%2C19%2C5%2C90%2C81%2C44%2C35%2C85%2C2%2C36%2C63%2C42%2C106%2C45%2C79%2C68%2C112%2C60%2C59%2C31%2C99%2C58%2C55%2C49%2C78%2C72%2C24%2C113" async=""></script><script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://static.ads-twitter.com/uwt.js"></script><script type="text/javascript" async="" src="https://bat.bing.com/bat.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-46CXENL4NC&amp;l=dataLayer&amp;cx=c&amp;gtm=45He52d0v6319694za200"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MDD5C4"></script><script id="sentry">
+  (function(c,u,v,n,p,e,z,A,w){function k(a){if(!x){x=!0;var l=u.getElementsByTagName(v)[0],d=u.createElement(v);d.src=A;d.crossorigin="anonymous";d.addEventListener("load",function(){try{c[n]=r;c[p]=t;var b=c[e],d=b.init;b.init=function(a){for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(w[b]=a[b]);d(w)};B(a,b)}catch(g){console.error(g)}});l.parentNode.insertBefore(d,l)}}function B(a,l){try{for(var d=m.data,b=0;b<a.length;b++)if("function"===typeof a[b])a[b]();var e=!1,g=c.__SENTRY__;"undefined"!==
+  typeof g&&g.hub&&g.hub.getClient()&&(e=!0);g=!1;for(b=0;b<d.length;b++)if(d[b].f){g=!0;var f=d[b];!1===e&&"init"!==f.f&&l.init();e=!0;l[f.f].apply(l,f.a)}!1===e&&!1===g&&l.init();var h=c[n],k=c[p];for(b=0;b<d.length;b++)d[b].e&&h?h.apply(c,d[b].e):d[b].p&&k&&k.apply(c,[d[b].p])}catch(C){console.error(C)}}for(var f=!0,y=!1,q=0;q<document.scripts.length;q++)if(-1<document.scripts[q].src.indexOf(z)){f="no"!==document.scripts[q].getAttribute("data-lazy");break}var x=!1,h=[],m=function(a){(a.e||a.p||a.f&&
+  -1<a.f.indexOf("capture")||a.f&&-1<a.f.indexOf("showReportDialog"))&&f&&k(h);m.data.push(a)};m.data=[];c[e]=c[e]||{};c[e].onLoad=function(a){h.push(a);f&&!y||k(h)};c[e].forceLoad=function(){y=!0;f&&setTimeout(function(){k(h)})};"init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function(a){c[e][a]=function(){m({f:a,a:arguments})}});var r=c[n];c[n]=function(a,e,d,b,f){m({e:[].slice.call(arguments)});r&&r.apply(c,arguments)};
+  var t=c[p];c[p]=function(a){m({p:a.reason});t&&t.apply(c,arguments)};f||setTimeout(function(){k(h)})})(window,document,"script","onerror","onunhandledrejection","Sentry","b4e7a2b423b54000ac2058644c76f718","https://static.parastorage.com/unpkg/@sentry/browser@5.27.4/build/bundle.min.js",{"dsn":"https://b4e7a2b423b54000ac2058644c76f718@sentry.wixpress.com/217"});
+  </script>
 
-    <script>
-        function toggleMenu() {
-            document.getElementById("menu").classList.toggle("show");
-        }
-        
-        function toggleTheme() {
-            document.body.classList.toggle('dark');
-            document.body.classList.toggle('light');
-        }
-
-        function toggleImageFolder() {
-            document.getElementById("image-folder").classList.toggle("hidden");
-        }
-    </script>
-
-<script>
-     function toggleMenu() {
-            document.getElementById("menu").classList.toggle("show");
-        }
-</script>
-
-    <script>
-        // Função para alternar entre tema claro e escuro
-        function toggleTheme() {
-            const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
-            document.body.classList.toggle('light', currentTheme === 'dark');
-            document.body.classList.toggle('dark', currentTheme === 'light');
-            const icon = document.querySelector('.theme-toggle svg');
-            // Você pode alterar o ícone aqui, se necessário, dependendo do tema
-        }
-
-        // Carregar imagens do localStorage ao recarregar a página
-        window.onload = function() {
-            const storedImages = JSON.parse(localStorage.getItem('images')) || [];
-            const gallery = document.getElementById('gallery');
-            storedImages.forEach(function(imageSrc, index) {
-                const imgWrapper = createImageElement(imageSrc, index);
-                gallery.appendChild(imgWrapper);
-            });
-        };
-
-        // Salvar imagem no localStorage ao fazer upload
-        document.getElementById('upload').addEventListener('change', function(event) {
-            const gallery = document.getElementById('gallery');
-            const files = event.target.files;
-            
-            const storedImages = JSON.parse(localStorage.getItem('images')) || [];
-            
-            for (let i = 0; i < files.length; i++) {
-                const file = files[i];
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const imgWrapper = createImageElement(e.target.result, storedImages.length);
-                    gallery.appendChild(imgWrapper);
-                    
-                    // Adicionar a imagem no localStorage
-                    storedImages.push(e.target.result);
-                    localStorage.setItem('images', JSON.stringify(storedImages));
-                }
-                reader.readAsDataURL(file);
-            }
+    <script type="text/javascript">
+    window.Sentry.onLoad(function () {
+      window.Sentry.init({
+        "release": "marketing-template-viewer@1.2442.0",
+        "environment": "production",
+        "allowUrls": undefined,
+        "denyUrls": undefined
+});
+      window.Sentry.configureScope(function (scope) {
+        scope.setUser({
+          id: "null-user-id:53bff0cd-c437-4c4b-b12a-0c5129a60af7",
+          clientId: "53bff0cd-c437-4c4b-b12a-0c5129a60af7",
         });
+        scope.setExtra("user.authenticated", false);
+        scope.setExtra("sessionId", "7fae037d-a4e0-4636-b8c6-3cc82a0d9017");
+      });
+    });
+    </script>
+    <!-- END SENTRY -->
+    <script src="https://static.parastorage.com/polyfill/v3/polyfill.min.js?features=default,es6,es7,es2017,es2018,es2019,fetch&amp;flags=gated&amp;unknown=polyfill"></script>
 
-        // Função para criar o elemento de imagem com botão de excluir
-        function createImageElement(imageSrc, index) {
-            const imgWrapper = document.createElement('div');
-            imgWrapper.classList.add('image-wrapper');
-            
-            const img = document.createElement('img');
-            img.src = imageSrc;
-            img.style.width = "300px";
-            img.style.margin = "10px";
-            img.style.borderRadius = "8px";
-            
-            const deleteButton = document.createElement('button');
-            deleteButton.textContent = "Excluir";
-            deleteButton.classList.add('delete-button');
-            deleteButton.onclick = function() {
-                deleteImage(index);
-                imgWrapper.remove();
-            };
-            
-            imgWrapper.appendChild(img);
-            imgWrapper.appendChild(deleteButton);
-            
-            return imgWrapper;
-        }
-
-        // Função para excluir imagem do localStorage
-        function deleteImage(index) {
-            const storedImages = JSON.parse(localStorage.getItem('images')) || [];
-            storedImages.splice(index, 1); // Remove a imagem do array
-            localStorage.setItem('images', JSON.stringify(storedImages)); // Atualiza o localStorage
+    <script>
+        window.onWixFedopsLoggerLoaded = function () {
+            window.fedopsLogger && window.fedopsLogger.reportAppLoadStarted('marketing-template-viewer');
         }
     </script>
-    <style>
+    <script onload="onWixFedopsLoggerLoaded()" src="//static.parastorage.com/unpkg/@wix/fedops-logger@5.508.0/dist/statics/fedops-logger.bundle.min.js" crossorigin=""></script>
 
-.menu { display: none; }
-        .menu.show { display: block; }
-        .hidden { display: none; }
-        .container { margin: 20px; }
-        .box { background-color: #333; color: white; padding: 20px; }
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
 
-        .toggle-folder {
-            border-radius: 3px;
-            position: absolute;
-            left: 20px;
-            margin-top: 2px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
+    <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
 
-        #image-folder{
-            margin-top: 100px;
-        }
+    <link rel="stylesheet" href="https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css">
+    <link rel="stylesheet" href="https://static.parastorage.com/unpkg/@wix/wix-fonts@1.14.0/madefor.min.css">
+    <link rel="stylesheet" href="https://static.parastorage.com/unpkg/@wix/wix-fonts@1.14.0/madeforDisplay.min.css">
+    <link rel="stylesheet" href="//static.parastorage.com/services/marketing-template-viewer/1.2442.0/app.min.css">
 
-        #image-folder img {
-           
-            width: 300px;
-            margin: 10px;
-            border-radius: 8px;
-        }
+    <meta name="description" content="Mostre a estética característica da sua empresa com este template divertido e colorido. Links para download proeminentes incentivam os visitantes a experimentar seus apps, e o aplicativo Formulários Wix permite que eles se apliquem para um emprego ou se inscrevam para atualizações em versões futuras. Criar um site tão divertido quanto seus jogos. Clique em &quot;Editar&quot; para começar.">
+    <meta name="author" content="Wixpress">
+    <meta http-equiv="content-language" content="pt">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            transition: background-color 0.3s, color 0.3s;
-        }
+    <meta property="og:title" content="Template Empresa de jogos | WIX">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pt.wix.com/website-template/view/html/2948">
+    <meta property="og:image" content="//static.wixstatic.com/media//templates/image/39a8489ec74394b752336d1839d0587e388528a983f73b58e9a27212646222321648287772499.jpg">
+    <meta content="Wix" property="og:site_name">
+    <meta property="og:description" content="Mostre a estética característica da sua empresa com este template divertido e colorido. Links para download proeminentes incentivam os visitantes a experimentar seus apps, e o aplicativo Formulários Wix permite que eles se apliquem para um emprego ou se inscrevam para atualizações em versões futuras. Criar um site tão divertido quanto seus jogos. Clique em &quot;Editar&quot; para começar.">
+    <meta property="fb:admins" content="731184828">
+    <meta name="fb:app_id" content="236335823061286">
+    <meta name="google-site-verification" content="QXhlrY-V2PWOmnGUb8no0L-fKzG48uJ5ozW0ukU7Rpo">
 
+    <link rel="canonical" href="https://pt.wix.com/website-template/view/html/2948">
 
-        .menu-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 2em;
-            cursor: pointer;
-        }
+    <link rel="alternate" hreflang="fr" href="https://fr.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="pt" href="https://pt.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="cs" href="https://cs.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="it" href="https://it.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="nl" href="https://nl.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="ko" href="https://ko.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="de" href="https://de.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="ru" href="https://ru.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="sv" href="https://sv.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="tr" href="https://tr.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="da" href="https://da.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="en" href="https://www.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="es" href="https://es.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="hi" href="https://hi.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="ja" href="https://ja.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="no" href="https://no.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="pl" href="https://pl.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="vi" href="https://vi.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="uk" href="https://uk.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="zh" href="https://zh.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="th" href="https://th.wix.com/website-template/view/html/2948">
+    <link rel="alternate" hreflang="x-default" href="https://www.wix.com/website-template/view/html/2948">
 
-        .menu {
+    
+  <script src="//static.parastorage.com/services/tag-manager-host-scripts/1.971.0//assets/TEMPLATES/google-tag-manager.js"></script><script src="https://bat.bing.com/p/action/36000948.js" type="text/javascript" async="" data-ueto="ueto_53740b8c5c"></script><script attributionsrc="" type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion/1006927621/?random=1739882802292&amp;cv=11&amp;fst=1739882802292&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be52d0v9133290662z86319694za201zb9123674316&amp;gcs=G111&amp;gcd=13t3t3t3t5l1&amp;dma=0&amp;tag_exp=101509157~101732279~101732281~102067808~102482432~102539968~102556566~102558064~102587591~102605417~102640599&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fpt.wix.com%2Fwebsite-template%2Fview%2Fhtml%2F2948%3ForiginUrl%3Dhttps%253A%252F%252Fpt.wix.com%252Fwebsite%252Ftemplates%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253D9671147640%255E115251452327%255Esearch%252520-%252520dsa%2526experiment_id%253D%255E%255E473582579735%255E%2526gad_source%253D1%2526gclid%253DCj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB%26tpClick%3Dview_button%26esi%3D90a22057-8226-4d21-a96b-00a78c9ada5e&amp;ref=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D9671147640%5E115251452327%5Esearch%2520-%2520dsa%26experiment_id%3D%5E%5E473582579735%5E%26gad_source%3D1%26gclid%3DCj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB&amp;gclaw_src=4_3&amp;label=Jza8CKKX8MgBEIX-keAD&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Template%20Empresa%20de%20jogos%20%7C%20WIX&amp;oid=null-user-id&amp;value=0&amp;bttype=purchase&amp;npa=0&amp;gclaw=Cj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB&amp;pscdl=noapi&amp;auid=776368297.1739882792&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%2520A(Brand%3B8.0.0.0%7CChromium%3B132.0.6834.197%7CGoogle%2520Chrome%3B132.0.6834.197&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;capi=1&amp;rfmt=3&amp;fmt=4"></script><script attributionsrc="" type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion/1006927621/?random=1739882802303&amp;cv=11&amp;fst=1739882802303&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be52d0v9133290662z86319694za201zb9123674316&amp;gcs=G111&amp;gcd=13t3t3t3t5l1&amp;dma=0&amp;tag_exp=101509157~101732279~101732281~102067808~102482432~102539968~102556566~102558064~102587591~102605417~102640599&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fpt.wix.com%2Fwebsite-template%2Fview%2Fhtml%2F2948%3ForiginUrl%3Dhttps%253A%252F%252Fpt.wix.com%252Fwebsite%252Ftemplates%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253D9671147640%255E115251452327%255Esearch%252520-%252520dsa%2526experiment_id%253D%255E%255E473582579735%255E%2526gad_source%253D1%2526gclid%253DCj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB%26tpClick%3Dview_button%26esi%3D90a22057-8226-4d21-a96b-00a78c9ada5e&amp;ref=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D9671147640%5E115251452327%5Esearch%2520-%2520dsa%26experiment_id%3D%5E%5E473582579735%5E%26gad_source%3D1%26gclid%3DCj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB&amp;gclaw_src=4_3&amp;label=bzk8CJTkotIDEIX-keAD&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Template%20Empresa%20de%20jogos%20%7C%20WIX&amp;value=0&amp;bttype=purchase&amp;npa=0&amp;gclaw=Cj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB&amp;pscdl=noapi&amp;auid=776368297.1739882792&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%2520A(Brand%3B8.0.0.0%7CChromium%3B132.0.6834.197%7CGoogle%2520Chrome%3B132.0.6834.197&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;capi=1&amp;rfmt=3&amp;fmt=4"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1041825691/?random=1739882802323&amp;cv=11&amp;fst=1739882802323&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be52d0z86319694za201zb9123674316&amp;gcd=13t3t3t3t5l1&amp;dma=0&amp;tag_exp=102067808~102482432~102539968~102558064~102587591~102605417~102640599&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fpt.wix.com%2Fwebsite-template%2Fview%2Fhtml%2F2948%3ForiginUrl%3Dhttps%253A%252F%252Fpt.wix.com%252Fwebsite%252Ftemplates%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253D9671147640%255E115251452327%255Esearch%252520-%252520dsa%2526experiment_id%253D%255E%255E473582579735%255E%2526gad_source%253D1%2526gclid%253DCj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB%26tpClick%3Dview_button%26esi%3D90a22057-8226-4d21-a96b-00a78c9ada5e&amp;ref=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D9671147640%5E115251452327%5Esearch%2520-%2520dsa%26experiment_id%3D%5E%5E473582579735%5E%26gad_source%3D1%26gclid%3DCj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB&amp;label=FYMYCO-T6gMQm__j8AM&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Template%20Empresa%20de%20jogos%20%7C%20WIX&amp;userId=null-user-id&amp;npa=0&amp;pscdl=noapi&amp;auid=776368297.1739882792&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%2520A(Brand%3B8.0.0.0%7CChromium%3B132.0.6834.197%7CGoogle%2520Chrome%3B132.0.6834.197&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;rfmt=3&amp;fmt=4"></script><script attributionsrc="" type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion/1006927621/?random=1739882803598&amp;cv=11&amp;fst=1739882803598&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be52d0v9133290662z86319694za201zb9123674316&amp;gcs=G111&amp;gcd=13t3t3t3t5l1&amp;dma=0&amp;tag_exp=101509157~101732279~101732281~102067808~102482432~102539968~102556566~102558064~102587591~102605417~102640599&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fpt.wix.com%2Fwebsite-template%2Fview%2Fhtml%2F2948%3ForiginUrl%3Dhttps%253A%252F%252Fpt.wix.com%252Fwebsite%252Ftemplates%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253D9671147640%255E115251452327%255Esearch%252520-%252520dsa%2526experiment_id%253D%255E%255E473582579735%255E%2526gad_source%253D1%2526gclid%253DCj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB%26tpClick%3Dview_button%26esi%3D90a22057-8226-4d21-a96b-00a78c9ada5e&amp;ref=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D9671147640%5E115251452327%5Esearch%2520-%2520dsa%26experiment_id%3D%5E%5E473582579735%5E%26gad_source%3D1%26gclid%3DCj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB&amp;gclaw_src=4_3&amp;label=HDYWCN-OhZQZEIX-keAD&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Template%20Empresa%20de%20jogos%20%7C%20WIX&amp;oid=null-user-id&amp;value=0&amp;bttype=purchase&amp;npa=0&amp;gclaw=Cj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB&amp;pscdl=noapi&amp;auid=776368297.1739882792&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%2520A(Brand%3B8.0.0.0%7CChromium%3B132.0.6834.197%7CGoogle%2520Chrome%3B132.0.6834.197&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;capi=1&amp;rfmt=3&amp;fmt=4"></script></head>
+  <body cz-shortcut-listen="true">
+    <script>
+        window.onWixRecorderLoaded = function () {
+            window.dispatchEvent(new Event('wixRecorderReady'));
+        };
+    </script>
 
-            position: absolute;
-            top: 15px;
-           left: 0px;
-            background: #222;
-            width: 150px;
-            padding: 10px;
-            display: none;
-            flex-direction: column;
-        }
+    <script async="" src="//static.parastorage.com/unpkg-semver/wix-recorder/app.bundle.min.js" crossorigin="" onload="onWixRecorderLoaded()"></script>
 
-        .menu a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            display: block;
-            transition: background 0.3s;
-        }
+    <script src="//static.parastorage.com/services/cookie-sync-service/1.347.20/embed-cidx.bundle.min.js"></script>
+    <script src="//static.parastorage.com/services/tag-manager-client/1.920.0/hostTags.bundle.min.js"></script>
+    <div id="root"><span data-newcolorsbranding="true" class="wds_1_161_0_newColorsBranding__root wds_1_161_0_madefor__madefor"><div data-hook="app"></div></div><div data-hook="template-demo" class="CJ4D6R"><div data-hook="desktop-view" class="Woz8P7"><iframe data-hook="desktop-iframe" src="https://www.wix.com/templatespt/2948-gaming-company" title="Empresa de jogos" width="100%" height="100%" class="eZTjsa"></iframe></div></div><div data-hook="info-pop-up" class="M05QSQ"><div class="E0wHmq"><button data-hook="card-close" class="eds_d0"><span class="ydbrSa">Fechar popup de informação</span></button><div class="qLnKwP"><h1 data-hook="card-title" class="PHJvhr">Empresa de jogos - Template de site</h1><div class="CEjC4K"><h3 data-hook="card-good-for-title" class="xqspyG">Bom para:</h3><p data-hook="card-good-for" class="gsbPc5">Empresas de tecnologia, startups de jogos e designers de videogame</p></div><div class="CEjC4K"><h3 class="xqspyG">Descrição:</h3><p data-hook="card-description" class="gsbPc5">Mostre a estética característica da sua empresa com este template divertido e colorido. Links para download proeminentes incentivam os visitantes a experimentar seus apps, e o aplicativo Formulários Wix permite que eles se apliquem para um emprego ou se inscrevam para atualizações em versões futuras. Criar um site tão divertido quanto seus jogos. Clique em "Editar" para começar.</p></div></div><div class="KiqsRq"><a data-hook="card-editor-url" class="XpwCp3 sKD7vO" target="_blank" href="https://manage.wix.com/edit-template/from-intro?originTemplateId=2be56f8e-b898-4e1a-934b-ecdf08bee7e9&amp;editorSessionId=90a22057-8226-4d21-a96b-00a78c9ada5e">Editar Agora</a></div></div></div></div></span></div>
+    <script>
+        window.__BASEURL__ = "https:\u002F\u002Fpt.wix.com\u002Fwebsite-template\u002Fview\u002Fhtml\u002F";
+        window.__INITIAL_I18N__ = {"locale":"pt","resources":{"errorPage.templatesLinkText":"Templates","template.viewer.page.title":"Template {{- title}} | WIX","template.viewer.studio.page.title":"Template responsivo de {{- title}} | Wix Studio","template.viewer.studio.page.description":"Esse {{- title}} está pronto para ser personalizado de acordo com suas necessidades exatas. Clique em \"Editar\" e experimente em qualquer dispositivo","template_button_label":"Editar Site","template_seeFeatures_label":"Veja Todos os Recursos","template_expand_examples_text":"Bom para","template_expand_header":"Recursos do Template","template.viewer.title":"Clique em Editar e crie um site incrível","template.viewer.saveTemplate.button":"Salvar template","template.viewer.edit.button":"Editar","template.viewer.read.more":"Saiba mais","template.viewer.back":"Voltar","template.viewer.info.edit.button":"Editar Agora","template.viewer.price":"Preço:","template.viewer.info.title":"{{- title}} - Template de site","template.viewer.info.goodFor":"Bom para:","template.viewer.info.description":"Descrição:","template.viewer.info.desktop.only.notice":"Edite este template em Wix.com a partir do desktop, e personalize qualquer um dos nossos lindos templates.","template.viewer.see.all.templates":"Ver todos os templates","template.viewer.seeAllExpressions":"See all expressions","template.viewer.goToBiggerScreen":"Para começar a criar, vá para seu desktop.","template.viewer.getStarted":"Começar","template.viewer.startNow":"Começar agora","template.viewer.features":"Recursos","template.viewer.allFeatures":"Todos os recursos","template.viewer.expressions":"Expressions","template.viewer.tutorials":"Tutoriais","template.viewer.updatesAndReleases":"Lançamentos e atualizações","template.viewer.comingSoon":"Em breve","template.viewer.academy":"Academy","template.viewer.editTemplate":"Editar template","template.viewer.header.backToTemplates":"Voltar para os templates","template.viewer.hint.copyPaste.title":"Dica: ","template.viewer.hint.copyPaste.text":"Você pode salvar seções que gostar desse template para reutilizar nos seus sites do Wix Studio. ","template.viewer.hint.copyPaste.urlTitle":"Saiba mais","a11y.desktop.button":"Mostrar versão desktop","a11y.mobile.button":"Mostrar versão mobile","a11y.close.popup.button":"Fechar popup de informação","toolbar.tooltip.desktop":"1001 px e mais","toolbar.tooltip.tablet":"751 a 1.000 px","toolbar.tooltip.mobile":"320 a 750 px","errorPage.4xx.title":"Não encontramos o template que você está procurando","errorPage.5xx.title":"Não foi possível carregar nosso template","errorPage.subTitle":"Erro {{- code }}","errorPage.4xx.details":"Tente buscar outro template \u003Clink\u003Eaqui\u003C\u002Flink\u003E.","errorPage.5xx.details":"Devido a um problema técnico temporário, não conseguimos carregar esta página. Aguarde alguns minutos e tente novamente.","errorPage.5xx.action":"Atualizar","seo.breadcrumbs.home":"Wix.com","seo.breadcrumbs.websiteTemplates":"Templates de site","seo.breadcrumbs.studioTemplates":"Templates do Wix Studio","seo.breadcrumbs.template":"Template de site {{- title}}","template.viewer.v2.edit.button":"Editar este site","template.viewer.v2.demo.button":"Ver site de demonstração","template.viewer.v2.template.info":"Esse template é bom para","template.viewer.v2.template.details":"Sobre esse template","template.viewer.v2.template.apps":"Apps principais","template.viewer.v2.template.apps.description":"Esse template vem com as seguintes funcionalidades principais:","template.viewer.v2.demo.template.name":"Template do site {{name}}","template.viewer.v2.template.likeThis.title":"Templates como este","template.viewer.v2.template.button.edit":"Editar","template.viewer.v2.template.button.view":"Ver","template.viewer.v2.header.description":"Comece a editar para criar seu site exclusivo","template.viewer.v2.demo.template.view":"Ver em tela cheia","APP_PORTFOLIO":"Portfólio Wix","APP_PORTFOLIO_DESCRIPTION":"Mostre seu trabalho em um belo portfólio","APP_DONATIONS":"Doações Wix","APP_DONATIONS_DESCRIPTION":"Arrecade e gerencie doações online","APP_EVENTS":"Wix Events","APP_EVENTS_DESCRIPTION":"Crie eventos, venda ingressos e acompanhe RSVPs","APP_BOOKINGS":"Wix Bookings","APP_BOOKINGS_DESCRIPTION":"Permita que clientes agendem serviços no seu site","APP_BLOG":"Wix Blog","APP_BLOG_DESCRIPTION":"Escreva posts para gerar tráfego e compartilhar suas ideias","APP_MENUS":"Menus do Wix Restaurantes","APP_MENUS_DESCRIPTION":"Crie e exiba um menu online","APP_ORDERS":"Pedidos do Wix Restaurantes","APP_ORDERS_DESCRIPTION":"Aceite pedidos online para retirada e entrega","APP_RESERVATIONS":"Reservas do Wix Restaurantes","APP_RESERVATIONS_DESCRIPTION":"Aceite reservas 24 horas por dia, 7 dias da semana, diretamente do seu site","APP_STORES":"Wix Stores","APP_STORES_DESCRIPTION":"Venda seus produtos ou encontre novos produtos para vender","APP_PLANS":"Planos Pagos Wix","APP_PLANS_DESCRIPTION":"Venda assinaturas e planos de membros","APP_PROGRAMS":"Programas Online Wix","APP_PROGRAMS_DESCRIPTION":"Crie e venda programas online","APP_HOTELS":"Wix Hotels","APP_HOTELS_DESCRIPTION":"Gerencie e expanda seu negócio de hospedagem","APP_CHAT":"Wix Chat","APP_CHAT_DESCRIPTION":"Permita que os visitantes do seu site entrem em contato 24\u002F7","APP_FORMS":"Formulários Wix","APP_FORMS_DESCRIPTION":"Capture leads, receba pagamentos e mais","APP_INSTAGRAM":"Feed do Instagram (novo)","APP_INSTAGRAM_DESCRIPTION":"Exiba suas fotos e vídeos do Instagram","APP_VIDEO":"Wix Vídeo","APP_VIDEO_DESCRIPTION":"Compartilhe, transmita e venda seus vídeos","APP_MUSIC":"Wix Música","APP_MUSIC_DESCRIPTION":"Reproduza e venda sua música sem comissão","APP_GROUPS":"Wix Grupos","APP_GROUPS_DESCRIPTION":"Hospede e gerencie comunidades online rentabilizáveis","APP_FILE_SHARE":"Acervo de Arquivos Wix","APP_FILE_SHARE_DESCRIPTION":"Crie um acervo de arquivos compartilhados para membros do site","thankYou.error.title":"Ocorreu um problema.","thankYou.error.description":"Ocorreu um problema técnico no nosso sistema. Selecione novamente seu template e tente salvar novamente.","thankYou.error.cta":"Ver templates","thankYou.wixOwnerAppBanner.cta":"Instalar","thankYou.wixOwnerAppBanner.description":"Obtenha o app Wix, crie e gerencie seu site onde estiver","thankYou.success.title":"O template que você salvou foi enviado para seu email","thankYou.success.alternativeTitle":"Seu template será enviado para seu email em breve","thankYou.success.description":"Abra pelo desktop para começar a criar este site.","template.newMobileFlow.preview.saveTemplate":"Salvar template"}};
+        window.__INITIAL_STATE__ = {"templatesLikeThis":[{"template":{"templateId":"a5595116-1e09-4b37-82a7-b57105027c8b","siteId":"98908242-318e-423f-bf96-8a135f4f86f6","metaSiteId":"cd21d286-98ce-4732-aa38-89d75a1107b9","title":"Escola de esportes","description":"Com um design divertido e cores vibrantes, este template esportivo é exatamente o que seu negócio precisa para criar uma presença online bem-sucedida. Informe aos visitantes quais são os tipos de atividades que você oferece e faça upload das suas imagens para que todos conheçam sua escola de esportes. Comece a editar agora mesmo!","price":"","goodFor":"Escolas de futebol, equipes esportivas e clubes esportivos","assets":[{"type":"DESKTOP","url":"\u002Ftemplates\u002Fimage\u002F17722e4c91594c45b2151e8985b0d139709ea3198bb42f4c1422efda2073f535.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F17722e4c91594c45b2151e8985b0d139709ea3198bb42f4c1422efda2073f535.jpg","alt":"desktop image"},{"type":"MOBILE","url":"\u002Ftemplates\u002Fimage\u002Fbdaa68c56fb2fb95db25ca84e5320bea965573d666c50397d9bbf2ee091ca75b.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002Fbdaa68c56fb2fb95db25ca84e5320bea965573d666c50397d9bbf2ee091ca75b.jpg","alt":"mobile image"}],"slug":"2038","features":[],"apps":[{"appDefId":"CloudSiteExtension"},{"appDefId":"SiteMembers"},{"appDefId":"Contacts"},{"appDefId":"4b10fcce-732d-4be3-9d46-801d271acda9"},{"appDefId":"HtmlWeb"},{"appDefId":"14ce1214-b278-a7e4-1373-00cebd1bef7c"},{"appDefId":"ProvidedMailingService"}],"featuresDescription":"","templateBuilder":"Editor"},"metadata":{"resultType":"Vespa","score":0.38771799206733704}},{"template":{"templateId":"04afdb96-ce64-4d12-b183-c78b43bc6c92","siteId":"8f991400-7c69-4ac1-9164-6f093b4ca62b","metaSiteId":"6dd17fea-356d-4c19-888a-b7f7c9d4c205","title":"Consultoria","description":"Promova seus serviços profissionais e negócios inovadores com este template atraente de consultoria. Com design nítido e layout limpo, este template oferece o cenário perfeito para mostrar as qualificações da sua empresa e atrair clientes potenciais. Clique em 'Editar' para criar um site de ponta para sua empresa.","price":"","goodFor":"Empresas de consultoria, consultores e advogados","assets":[{"type":"DESKTOP","url":"\u002Ftemplates\u002Fimage\u002F18adedfa2790c1810e37bdcc3f7d18b9f5995528c6543b16acd8c5193789ed5f.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F18adedfa2790c1810e37bdcc3f7d18b9f5995528c6543b16acd8c5193789ed5f.jpg","alt":"desktop image"},{"type":"MOBILE","url":"\u002Ftemplates\u002Fimage\u002Feb92ce562a7abf72599dddab4387ae46c9cf28887a1ce4a8fca6079dcd039c3f.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002Feb92ce562a7abf72599dddab4387ae46c9cf28887a1ce4a8fca6079dcd039c3f.jpg","alt":"mobile image"}],"slug":"2037","features":[],"apps":[{"appDefId":"Contacts"},{"appDefId":"14ce1214-b278-a7e4-1373-00cebd1bef7c"},{"appDefId":"4b10fcce-732d-4be3-9d46-801d271acda9"},{"appDefId":"HtmlWeb"},{"appDefId":"ProvidedMailingService"},{"appDefId":"SiteMembers"},{"appDefId":"CloudSiteExtension"}],"featuresDescription":"","templateBuilder":"Editor"},"metadata":{"resultType":"Vespa","score":0.3817957639694214}},{"template":{"templateId":"e71c016a-3ef9-494e-ba34-934f9a3f418e","siteId":"81de543b-c816-473b-b3ad-0cf43022b31f","metaSiteId":"23aee4c1-faa6-4c77-bab4-81f45e9f014b","title":"Empresa de produção","description":"Quando quiser compartilhar vídeos, quanto maior melhor. O layout do Wix Vídeo combinado ao design moderno desse template darão destaque ao seu vídeo. Clique em Editar e faça com que os clientes vejam, divulguem e comprem as suas produções.","price":"","goodFor":"Produtoras independentes, distribuidores de mídia e vídeo","assets":[{"type":"DESKTOP","url":"\u002Ftemplates\u002Fimage\u002Fb6c1cc19c9c9cf19497b468fa7b63ab700ec1ca225a0cf248a0a1f133d217a4b1584546820319.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002Fb6c1cc19c9c9cf19497b468fa7b63ab700ec1ca225a0cf248a0a1f133d217a4b1584546820319.jpg","alt":""},{"type":"MOBILE","url":"\u002Ftemplates\u002Fimage\u002Fcede8f77d9437d0bde493a96430b535a8db38235bd21c6c52b1efd9144c9f1711584546823831.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002Fcede8f77d9437d0bde493a96430b535a8db38235bd21c6c52b1efd9144c9f1711584546823831.jpg","alt":""}],"slug":"2208","features":[],"color":{"color1":"black","colorStyle":"dark"},"layout":{"layout1":"strip"},"apps":[{"appDefId":"Contacts"},{"appDefId":"1375baa8-8eca-5659-ce9d-455b2009250d"},{"appDefId":"SiteMembers"},{"appDefId":"HtmlWeb"},{"appDefId":"14409595-f076-4753-8303-9a86f9f71469"},{"appDefId":"ProvidedMailingService"},{"appDefId":"14271d6f-ba62-d045-549b-ab972ae1f70e"}],"featuresDescription":"","templateBuilder":"Editor"},"metadata":{"resultType":"Vespa","score":0.37690553069114685}}],"viewMode":"desktop","isInfoShown":false,"isEditButtonHidden":false,"template":{"title":"Empresa de jogos","description":"Mostre a estética característica da sua empresa com este template divertido e colorido. Links para download proeminentes incentivam os visitantes a experimentar seus apps, e o aplicativo Formulários Wix permite que eles se apliquem para um emprego ou se inscrevam para atualizações em versões futuras. Criar um site tão divertido quanto seus jogos. Clique em \"Editar\" para começar.","image":"\u002Ftemplates\u002Fimage\u002F39a8489ec74394b752336d1839d0587e388528a983f73b58e9a27212646222321648287772499.jpg","slug":"2948","lng":"pt","languages":["cs","da","de","en","es","fi","fr","hi","id","it","ja","ko","nl","no","pl","pt","ru","sv","th","tr","uk","vi","zh"],"price":"","docUrl":"https:\u002F\u002Fwww.wix.com\u002Ftemplatespt\u002F2948-gaming-company","editorUrl":"https:\u002F\u002Fmanage.wix.com\u002Fedit-template\u002Ffrom-intro?originTemplateId=2be56f8e-b898-4e1a-934b-ecdf08bee7e9&editorSessionId=90a22057-8226-4d21-a96b-00a78c9ada5e","goodFor":"Empresas de tecnologia, startups de jogos e designers de videogame","siteId":"8fb0a0db-cdc2-47a8-bda3-ec80a35a0437","mobileImage":{"type":"MOBILE","url":"\u002Ftemplates\u002Fimage\u002F45a417144f0857b2805ddb285f3c6ada63fe90fea76c462097025620ad7f00301648287837865.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F45a417144f0857b2805ddb285f3c6ada63fe90fea76c462097025620ad7f00301648287837865.jpg","alt":""},"desktopImage":{"type":"DESKTOP","url":"\u002Ftemplates\u002Fimage\u002F39a8489ec74394b752336d1839d0587e388528a983f73b58e9a27212646222321648287772499.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F39a8489ec74394b752336d1839d0587e388528a983f73b58e9a27212646222321648287772499.jpg","alt":""},"metaSiteId":"2be56f8e-b898-4e1a-934b-ecdf08bee7e9","editorSessionId":"90a22057-8226-4d21-a96b-00a78c9ada5e","isResponsive":false,"isStudio":false,"templateId":"8d5180a7-383e-4b65-a7e4-ed60b0327a10","url":"https:\u002F\u002Fwww.wix.com\u002Ftemplatespt\u002F2948-gaming-company","apps":[{"appDefId":"14ce1214-b278-a7e4-1373-00cebd1bef7c"},{"appDefId":"ProvidedMailingService"},{"appDefId":"4b10fcce-732d-4be3-9d46-801d271acda9"},{"appDefId":"HtmlWeb"},{"appDefId":"14271d6f-ba62-d045-549b-ab972ae1f70e"},{"appDefId":"SiteMembers"},{"appDefId":"CloudSiteExtension"},{"appDefId":"Contacts"}]},"activeExperiments":["OpenTemplateInSameTabForDashboardFirstUsers","StudioTemplatesPageNewUI"],"config":{"locale":"pt","dealerCmsTranslationsUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fdealer-cms-translations\u002F1.7059.0\u002F","dealerLightboxUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fdealer-lightbox\u002F2.0.260\u002F"},"userData":{"isLoggedIn":false}};
+        window.__BI__ = {"siteId":"8fb0a0db-cdc2-47a8-bda3-ec80a35a0437","originUrl":"https:\u002F\u002Fpt.wix.com\u002Fwebsite\u002Ftemplates?utm_source=google&utm_medium=cpc&utm_campaign=9671147640^115251452327^search%20-%20dsa&experiment_id=^^473582579735^&gad_source=1&gclid=Cj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB","referer":"https:\u002F\u002Fpt.wix.com\u002Fwebsite\u002Ftemplates?utm_source=google&utm_medium=cpc&utm_campaign=9671147640^115251452327^search%20-%20dsa&experiment_id=^^473582579735^&gad_source=1&gclid=Cj0KCQiA_NC9BhCkARIsABSnSTabEhKShVgeMYw00wjZEbZzpk8ZBCt0M2e30ZvA7JFAo-jg6xkRQ2IaAu5fEALw_wcB","editorSessionId":"90a22057-8226-4d21-a96b-00a78c9ada5e"};
+        window.__DEVICE__ = "desktop";
+        window.__CONSENT_POLICY__ = {"essential":true,"functional":true,"analytics":true,"advertising":true,"dataToThirdParty":true};
+    </script>
 
-        .menu a:hover {
-            background: #444;
-        }
+    <script src="//static.parastorage.com/unpkg/react@18.2.0/umd/react.production.min.js" crossorigin=""></script>
+    <script src="//static.parastorage.com/unpkg/react-dom@18.2.0/umd/react-dom.production.min.js" crossorigin=""></script>
+    <script src="//static.parastorage.com/services/cookie-consent-policy-client/1.866.0/app.bundle.min.js"></script>
 
-        .menu.show {
-            display: flex;
-        }
+    
+      <script src="//static.parastorage.com/services/dealer-lightbox/2.0.260/dealer-lightbox.bundle.min.js"></script>
+    
 
-        body.dark {
-            background-color: #1b1b1b;
-            color: white;
-        }
+    <script src="//static.parastorage.com/services/marketing-template-viewer/1.2442.0/app.bundle.min.js"></script>
+  
 
-        body.light {
-            background-color: #f4f4f4;
-            color: black;
-        }
-
-
-        body.light .box {
-            background-color: white;
-            color: black;
-        }
-
-
-        body.light .menu-btn {
-           
-            color: black; }
-
-        header {
-            
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            
-            padding: 60px;
-            width: 100%;
-
-            position: relative;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #fff;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 10px;
-        }
-
-        .buttons button {
-        background-color: #1b1b1b;
-            color: white;
-            border: none;
-            padding: 0px 12px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .theme-toggle {
-            margin-top: 20px;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: transparent;
-            color: white;
-            border: none;
-            font-size: 2em;
-            cursor: pointer;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .box {
-       
-          
-            background-color: #333;
-            padding: 20px;
-            border-radius: 8px;
-            width: 400px;
-            text-align: center;
-            color: white;
-        }
-
-        .custom-file-upload {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: inline-block;
-            background-color: #4caf50;
-            color: white;
-           border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .custom-file-upload:hover {
-            background-color: #45a049;
-        }
-
-        input[type="file"] {
-            display: none;
-        }
-
-        #gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-            gap: 10px;
-        }
-
-        .image-wrapper {
-           
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .delete-button {
-            background-color: #e74c3c;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 5px;
-        }
-
-        .delete-button:hover {
-            background-color: #c0392b;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .buttons {
-                flex-direction: column;
-                gap: 5px;
-            }
-
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .custom-file-upload {
-                bottom: 10px;
-                right: 10px;
-                padding: 8px 12px;
-                font-size: 12px;
-            }
-        }
-    </style>
-</body>
-</html>
+</body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar><chatgpt-sidebar-popups data-gpts-theme="light"></chatgpt-sidebar-popups></html>

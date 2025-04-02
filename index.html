@@ -3,199 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaybird Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Finance App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
     <style>
+       .img-main{
+        width: 20%;
+        border-radius: 50%;
+        /*border: 3px solid lime;*/
+       }
 
-        .linkindex{
-            text-decoration: none;
-            color: unset;
-        }
+    *{
+        font-family: "Open Sans", sans-serif !important;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+    }
 
-        body {
-            background-color: #f8dce0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        body.light .buttons button {
-            background-color: white;
-            color: black;
-        }
-
-
-        body.dark{
-            background-color: #1b1b1b;
+    body {
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
         }
 
-        body.light .post {
-            background-color: #f4f4f4;
-            color: black;
-          
-        }
-
-        body.light {
-            background-color: #f4f4f4;
-            color: black;
-        }
-
-
-        body.light .container {
-            background-color: #1b1b1b;
-            color: white;
-        }
-
-        
-        .buttons button {
-        background-color: #1b1b1b;
-            color: white;
-            border: none;
-            padding: 10px 12px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-       
-
-
-        body.light .menu-btn {
-           
-            color: black; }
-
-        .container {
-            height: 100vh;
-            position: absolute;
-      
-            background-color: white;
-            width: 400px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-           
-            padding-bottom: 10px;
-        }
-        .header h1 {
-            color: #363032;
-        }
-        .profile-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 15px;
-            border-bottom: 2px solid #ccc;
-        }
-        .profile-info img {
-            width: 80px;
-            border-radius: 10px;
-        }
-        .buttons {
-            margin-top: 10px;
-            display: flex;
-            gap: 10px;
-        }
-       
-        .content {
-          
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-        }
-        .recent-media {
-            border-radius: 5px;
-            width: 48%;
-            padding: 2px;
-        }
-        .recent-media, .recent-posts {
-            width: 48%;
-           
-        }
-        .recent-media img {
-            width: 60px;
-            height: 60px;
-            border-radius: 5px;
-        }
-        .post {
-          
-            background-color: #eceaea;
-            padding: 10px;
-            margin-top: 10px;
-            border-radius: 5px;
-        }
-
-        .galerialink{
-            text-decoration: none;
-        }
     </style>
+
 </head>
-<body class="dark">
-    <div class="container">
-        <div class="header">
-            <div class="buttons">
-        
-                <!-- Botão de modo escuro (no canto superior direito) -->
-                <button class="theme-toggle" onclick="toggleTheme()">
-                    <!-- Ícone SVG (adicionei o seu SVG aqui) -->
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
-                </button>
-            </div>
+<body class="bg-red-100 text-white">
+    <div class="p-4">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl"><img class="img-main" src="img/aa965db9a1fe827af695901ba2e73afd.jpg" alt="">  <div class="text-black text-lg font-bold mx-auto px-4 open-sans" >Dutra</div></div>
+            
         </div>
         
-      
-        <div class="content">
-            <div class="recent-media">
-                <h3>Recent Media</h3>
-                <a class="galerialink" href="galeria.html">
-                    <img src="img/l12c7vKVRCd-XLIdDkLUDg.png">
-                    <img src="img/l12c7vKVRCd-XLIdDkLUDg.png">
-                    <img src="img/l12c7vKVRCd-XLIdDkLUDg.png">
-                  
-                </a>
-             
-            </div>
-            <div class="recent-posts">
-                <h3>Recent Posts</h3>
-                <a class="linkindex" href="login.html">
-                    <div class="post"><strong>Before You Follow</strong><br>pls use tone indicators...</div>
-                </a>
+        <div class="flex justify-between items-center">
+           
+        </div>
 
-                <a class="linkindex" href="login.html">
-                    <div class="post"><strong>Before You Follow</strong><br>pls use tone indicators...</div>
-                </a>
-               
+        <div class="mt-6 flex items-center">
+            <button class="bg-white text-black px-4 py-2 rounded-full font-bold">MONTHLY</button>
+            <button class="ml-2 text-black">WEEKLY</button>
+            <button class="ml-2 text-black">DAILY</button>
+        </div>
+
+        <div class="mt-6 text-center">
+            <p class="text-sm text-black">TOTAL SPENDINGS</p>
+            <p class="text-3xl font-bold"></p>
+        </div>
+
+        <div class="mt-6 overflow-x-auto whitespace-nowrap flex space-x-4 p-2">
+            <div class="bg-white text-black p-4 rounded-xl w-48 flex-shrink-0">
+                <div class="text-center">
+                    <div class="bg-gray-200 p-4 rounded-full inline-block"></div>
+                    <p class="font-bold">Uber Ride</p>
+                    <p class="text-gray-500 text-sm">JUL 06, 2016</p>
+                    <p class="font-bold text-lg"></p>
+                    <span class="bg-green-200 text-green-800 px-2 py-1 rounded-full text-xs">Approved</span>
+                </div>
+            </div>
+            <div class="bg-white text-black p-4 rounded-xl w-48 flex-shrink-0">
+                <div class="text-center">
+                    <div class="bg-gray-200 p-4 rounded-full inline-block"></div>
+                    <p class="font-bold">Starbucks</p>
+                    <p class="text-gray-500 text-sm">JUL 06, 2016</p>
+                    <p class="font-bold text-lg"></p>
+                    <span class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full text-xs">Pending</span>
+                </div>
+            </div>
+            <div class="bg-white text-black p-4 rounded-xl w-48 flex-shrink-0">
+                <div class="text-center">
+                    <div class="bg-gray-200 p-4 rounded-full inline-block"></div>
+                    <p class="font-bold">Starbucks</p>
+                    <p class="text-gray-500 text-sm">JUL 06, 2016</p>
+                    <p class="font-bold text-lg"></p>
+                    <span class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full text-xs">Pending</span>
+                </div>
+            </div>
+            <div class="bg-white text-black p-4 rounded-xl w-48 flex-shrink-0">
+                <div class="text-center">
+                    <div class="bg-gray-200 p-4 rounded-full inline-block"></div>
+                    <p class="font-bold">Starbucks</p>
+                    <p class="text-gray-500 text-sm">JUL 06, 2016</p>
+                    <p class="font-bold text-lg"></p>
+                    <span class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full text-xs">Pending</span>
+                </div>
+            </div>
+            <div class="bg-white text-black p-4 rounded-xl w-48 flex-shrink-0">
+                <div class="text-center">
+                    <div class="bg-gray-200 p-4 rounded-full inline-block"></div>
+                    <p class="font-bold">Starbucks</p>
+                    <p class="text-gray-500 text-sm">JUL 06, 2016</p>
+                    <p class="font-bold text-lg"></p>
+                    <span class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full text-xs">Pending</span>
+                </div>
+            </div>
+            <div class="bg-white text-black p-4 rounded-xl w-48 flex-shrink-0">
+                <div class="text-center">
+                    <div class="bg-gray-200 p-4 rounded-full inline-block"></div>
+                    <p class="font-bold">Starbucks</p>
+                    <p class="text-gray-500 text-sm">JUL 06, 2016</p>
+                    <p class="font-bold text-lg"></p>
+                    <span class="bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full text-xs">Pending</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 flex justify-around text-gray-300">
+            <div class="text-center">
+                <div class="text-2xl"></div>
+                <p>DASHBOARD</p>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl"></div>
+                <p>SEARCH</p>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl"></div>
+                <p>PROFILE</p>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl"></div>
+                <p>NOTIFICATIONS</p>
             </div>
         </div>
     </div>
-    <script>
-          // Função para alternar entre tema claro e escuro
-          function toggleTheme() {
-            const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
-            document.body.classList.toggle('light', currentTheme === 'dark');
-            document.body.classList.toggle('dark', currentTheme === 'light');
-            const icon = document.querySelector('.theme-toggle svg');
-            // Você pode alterar o ícone aqui, se necessário, dependendo do tema
-        }
-
-
-        function toggleMenu() {
-            document.getElementById("menu").classList.toggle("show");
-        }
-        
-        function toggleTheme() {
-            document.body.classList.toggle('dark');
-            document.body.classList.toggle('light');
-        }
-
-        function toggleImageFolder() {
-            document.getElementById("image-folder").classList.toggle("hidden");
-        }
-    </script>
 </body>
 </html>
