@@ -30,6 +30,7 @@
         }
 
         .bg-custom {
+        
     background-image: url('img/wp9418258-4k-anime-black-and-white-wallpapers.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: center;
@@ -41,50 +42,69 @@
 
 </header>
 <body class="bg-black text-white">
-    <div class="">
-        <div class="flex justify-between items-center">
-            <div class="text-2xl"><img class="img-main" src="img/eu.jpg" alt="">  </div>
+    <header class="bg-black text-white fixed w-full top-0 left-0 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
             
+                <a href="#" class="text-2xl font-bold">DUTRAC6</a>
+
+              
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-gray-400">Início</a>
+                    <a href="#" class="hover:text-gray-400">Sobre</a>
+                    <a href="#" class="hover:text-gray-400">Serviços</a>
+                    <a href="#" class="hover:text-gray-400">Contato</a>
+                </nav>
+
+               
+                <button id="menu-btn" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
-        
-        <div class="flex justify-between items-center">
-           
-        </div>
+
+        <!-- MENU MOBILE (OCULTO POR PADRÃO) -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Início</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Sobre</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Serviços</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Contato</a>
+        </nav>
+    </header>
 
         
 
-        <div class="mt-6 text-center">
-            <p class="text-sm text-black">TOTAL SPENDINGS</p>
-            <p class="text-3xl font-bold"></p>
-        </div>
+       
 
-        <div class=" bg-custom bg-neutral-500 mt-10 overflow-x-auto whitespace-nowrap flex space-x-7 p-5">
-            <div class=" bg-neutral-800 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+        <div class=" bg-custom bg-neutral-500  overflow-x-auto whitespace-nowrap flex space-x-5 p-5">
+            <div class=" bg-neutral-800 mt-20 bg-opacity-50 p-5 rounded-xl w-80 h-80 flex-shrink-0">
                 <div class="text-center">
                     
                 </div>
             </div>
-            <div class=" bg-neutral-800 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class=" bg-neutral-800 mt-20 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
                 <div class="text-center">
                     
                 </div>
             </div>
-            <div class=" bg-neutral-800 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class=" bg-neutral-800 mt-20 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
                 <div class="text-center">
                     
                 </div>
             </div>
-            <div class=" bg-neutral-800 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class=" bg-neutral-800 mt-20 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
                 <div class="text-center">
                     
                 </div>
             </div>
-            <div class=" bg-neutral-800 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class=" bg-neutral-800 mt-20 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
                 <div class="text-center">
                     
                 </div>
             </div>
-            <div class=" bg-neutral-800 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class=" bg-neutral-800 mt-20 bg-opacity-50 p-4 rounded-xl w-80 h-80 flex-shrink-0">
                 <div class="text-center">
                     
                 </div>
@@ -105,27 +125,12 @@
         </div>
     </div>
     <script>
-        const body = document.body;
-        const themeToggle = document.getElementById("theme-toggle");
+        // Menu Responsivo
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-        // Verifica o tema salvo no localStorage
-        if (localStorage.getItem("theme") === "dark") {
-            body.classList.add("bg-gray-900", "text-white");
-            body.classList.remove("bg-white", "text-black");
-        }
-
-        themeToggle.addEventListener("click", () => {
-            if (body.classList.contains("bg-gray-900")) {
-                // Muda para tema claro
-                body.classList.remove("bg-gray-900", "text-white");
-                body.classList.add("bg-white", "text-black");
-                localStorage.setItem("theme", "light");
-            } else {
-                // Muda para tema escuro
-                body.classList.add("bg-blue-500", "text-white");
-                body.classList.remove("bg-white", "text-black");
-                localStorage.setItem("theme", "dark");
-            }
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
     </script>
 </body>
