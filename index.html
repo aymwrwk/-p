@@ -39,7 +39,10 @@
         </div>
         
         <div class="flex justify-between items-center">
-           
+            <h1 class="text-2xl font-bold">Finance App</h1>
+            <button id="theme-toggle" class="px-4 py-2 bg-black text-white rounded-lg">
+                Alternar Tema
+            </button>
         </div>
 
         
@@ -119,5 +122,29 @@
            
         </div>
     </div>
+    <script>
+        const body = document.body;
+        const themeToggle = document.getElementById("theme-toggle");
+
+        // Verifica o tema salvo no localStorage
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("bg-gray-900", "text-white");
+            body.classList.remove("bg-white", "text-black");
+        }
+
+        themeToggle.addEventListener("click", () => {
+            if (body.classList.contains("bg-gray-900")) {
+                // Muda para tema claro
+                body.classList.remove("bg-gray-900", "text-white");
+                body.classList.add("bg-white", "text-black");
+                localStorage.setItem("theme", "light");
+            } else {
+                // Muda para tema escuro
+                body.classList.add("bg-blue-500", "text-white");
+                body.classList.remove("bg-white", "text-black");
+                localStorage.setItem("theme", "dark");
+            }
+        });
+    </script>
 </body>
 </html>
