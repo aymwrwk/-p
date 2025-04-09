@@ -1,180 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background-color: #f5f6fa;
-}
-
-.sidebar {
-    width: 300px;
-    background: #ffffff;
-    padding: 20px;
- 
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.sidebar h2 {
-    position: relative;
-    top: 120px;
-    color: #333;
-    text-align: center;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    padding: 15px;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    transition: 0.3s;
-}
-
-.sidebar ul li.active, .sidebar ul li:hover {
-    background: #000000;
-    color: white;
-}
-
-.main-content {
-    flex-grow: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header {
-    
-    top: -20px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 105%;
+.merienda-uniquifier> {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
   
-    padding: 15px 25px;
-    
-    margin-bottom: 20px;
-}
-
-header input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    margin-right: 10px;
-}
-
-header input:hover {
-   
-}
-
-.profile-pic {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #000000;
-}
-
-.content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-}
-
-
-
-.overview, .history {
-    width: 90%;
-    background: white;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    
-}
-
-.balance-card {
-   
   
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-   
-}
-
-.white-container {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-   
-    width: 100%;
-}
-
-.action-buttons button {
-    background: #2ecc71;
-    border: none;
-    color: white;
-    padding: 12px 15px;
-    border-radius: 6px;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: 600;
-}
-
-.action-buttons button:hover {
-    background: #27ae60;
-}
-
-.transaction {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-.expense {
-    color: red;
-}
-
-.income {
-    color: green;
-}
-
-.user-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.profile-details {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    text-align: left;
-}
-
-.profile-pic-large {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #2ecc71;
-}
+         .img-main{
+          /*border: 3px solid lime;*/
+          margin: 10px;
+          max-width: 80px;
+           border-radius: 50%;
+         }
+  
+      *{
+          font-family: "Merienda", cursive;
+      }
+  
+      body {
+          
+          font-weight: 400;
+          font-family: 'Open Sans', sans-serif;
+          }
+  
+      .bg-custom {
+          background-image: url('img/tesoura.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          }
+  
+          .bg-custom2 {
+         
+              background-image: url('img/troll-face-poster.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          
+      }
+  
+      .bg-custom-main{
+          background-image: url('img/tesoura.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+      }
+  
+          .bg-custom02 {
+              background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     }
+     .bg-custom03 {
+      background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     }
+     .bg-custom04 {
+      background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     }
+     .bg-custom05 {
+         
+      background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     }
+     .bg-custom06 {
+         
+      background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     }
+  
+     .bg-custom07{
+      background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     }
+  
+     .mainimage3{
+      /*border-top: 1px dashed rgb(255, 255, 255);*/
+      
+     
+     }
+  
+     .border-custom{
+     /* border: 2px dashed rgba(255, 255, 255, 0.452);*/
+     }
+  
+     .frorm-01{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -210%);
+     }
+  
+     .paragrafo-main{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -140%);
+     }
+  
+     .imgdata{
+     
+     }
+  
+     header{
+      background-color: black;
+      z-index: 1000;
+     }
+  
+      .bg-custon-container{
+          background-image: url('img/tesoura.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+      }
+  
+      .img-primaria{
+      
+      }
+  
+      .bg-primaria{
+      
+      }
+    
+  
