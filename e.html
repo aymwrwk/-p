@@ -6,42 +6,131 @@
     <title>Jogo do Reflexo</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<div class="flex flex-col items-center justify-center h-screen bg-gray-900 text-white select-none">
-    
-    <h1 class="text-3xl font-bold mb-6">Teste Seu Reflexo!</h1>
-    
-    <button id="startBtn" class="px-6 py-3 bg-blue-500 rounded-lg text-white text-lg hover:bg-blue-600 transition">
-        Iniciar
-    </button>
+<body>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <a href="#" class="text-2xl font-bold">DUTRAC6</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-gray-400">Início</a>
+                <a href="#" class="hover:text-gray-400">Sobre</a>
+                <a href="#" class="hover:text-gray-400">Serviços</a>
+                <a href="#" class="hover:text-gray-400">Contato</a>
+            </nav>
 
-    <p id="message" class="mt-4 text-lg text-gray-300"></p>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
 
-    <div id="target" class="hidden w-16 h-16 bg-green-500 rounded-full absolute cursor-pointer"></div>
+    <center> 
+        <div class="frorm-01">
+            <p class="w-80"></p>
+        </div>
+    </center>
+    </div>
+
+    <center> 
+        <div>
+            <img src="img/upscalemedia-transformed.png" alt="">
+            <br> 
+            <div class="text-center   ">
+                <div class="text-2xl"></div>
+                <p></p>
+            </div>
+        </div>
+    </center>
+
+    
+<div className="">
+    <center>
+        <picture class="mt-6 bg-white p-82">
+            <p class="mt-1 mb-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur unde velit veniam, optio provident dignissimos ex sapiente nesciunt neque deleniti laudantium, delectus cupiditate, excepturi quae corrupti? Amet maiores inventore sequi.
+            </p>
+        </picture>
+    </center>
+</div>  
+
+<center> 
+    <div>
+       
+        <img src="img/tesoura.jpg" alt="">
+        <p class="paragrafo-main"> TEXTOS AQUI <br> <br>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum numquam totam aut vero officiis eum, sed adipisci ad modi assumenda unde
+        </p>
+   
+        <p class="paragrafo-main"></p>
+        <br> 
+        <div class="text-center   ">
+            <div class="text-2xl"></div>
+            <p>FOTOS AQUI</p>
+        </div>
+    </div>
+</center>
+
+    <div class=" bg-custom-main bg-neutral-500  overflow-x-auto whitespace-nowrap flex space-x-4 p-5">
+        <div class="bg-custom02 bg-neutral-800 mt-10 bg-opacity-80 p-5 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class="text-center">
+                
+            </div>
+        </div>
+        <div class=" bg-custom03 bg-neutral-800 mt-10 bg-opacity-80 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class="text-center">
+                
+            </div>
+        </div> 
+        <div class=" bg-custom04 bg-neutral-800 mt-10 bg-opacity-80 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class="text-center">
+                
+            </div>
+        </div>
+        <div class=" bg-custom05 bg-neutral-800 mt-10 bg-opacity-80 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class="text-center">
+                
+            </div>
+        </div>
+        <div class=" bg-custom06 bg-neutral-800 mt-10 bg-opacity-80 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class="text-center">
+                
+            </div>  
+    
+        </div>
+        <div class=" bg-custom07 border-custom bg-neutral-800 mt-10 bg-opacity-80 p-4 rounded-xl w-80 h-80 flex-shrink-0">
+            <div class="text-center">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="border1 mt-6 flex justify-around text-gray-300">
+        <div class="text-center">
+            <div class="text-lg"></div>
+            <p class="text-lg">+ MAIS</p>
+        </div>
+    </div>
+
 
     <script>
-        let startTime, timeout;
+        // Menu Responsivo
+        const menuBtn = document.getElementById('menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-        document.getElementById("startBtn").addEventListener("click", () => {
-            document.getElementById("message").textContent = "Aguarde...";
-            document.getElementById("target").classList.add("hidden");
-
-            const randomDelay = Math.random() * 3000 + 2000; // Entre 2 e 5 segundos
-
-            timeout = setTimeout(() => {
-                startTime = new Date().getTime();
-                document.getElementById("target").style.top = Math.random() * 400 + "px";
-                document.getElementById("target").style.left = Math.random() * 400 + "px";
-                document.getElementById("target").classList.remove("hidden");
-            }, randomDelay);
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
         });
 
-        document.getElementById("target").addEventListener("click", () => {
-            const reactionTime = new Date().getTime() - startTime;
-            document.getElementById("message").textContent = `Seu tempo de reação: ${reactionTime}ms!`;
-            document.getElementById("target").classList.add("hidden");
-            clearTimeout(timeout);
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
         });
     </script>
-</div>
 </body>
+
+
 </html>
