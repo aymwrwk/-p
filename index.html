@@ -1,224 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Finance App</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Merienda:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  .bg-custom{
+    background-image: url('img/bg-punpun.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+  }
+</style>
+<body class="bg-custom flex items-center justify-center min-h-screen font-sans px-4">
 
-    <style>
-        
+  <div class="backdrop-blur-2xl flex flex-col md:flex-row w-full  shadow-2xl overflow-hidden">
 
-        .merienda-uniquifier> {
-  font-family: "Merienda", cursive;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
+    <!-- Left Side -->
+    <div class="  w-full md:w-1/2 p-8 md:p-10 flex flex-col items-center justify-center text-center ">
+      <img src="img/punpun01.gif" alt="Illustration" class="w-24 md:w-60 mb-6 md:mb-8" />
+      <h2 class="text-2xl md:text-3xl font-bold text-black mb-2">Hello!</h2>
+      <p class="text-gray-500 text-sm md:text-base mb-6">Welcome to Sales TOP, a platform to manage real estate needs.</p>
 
+      <div class="flex gap-4 mb-6 flex-col sm:flex-row">
+        <button class="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition">Login</button>
+        <button class="border border-black text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">Sign Up</button>
+      </div>
 
-       .img-main{
-        /*border: 3px solid lime;*/
-        margin: 10px;
-        max-width: 80px;
-         border-radius: 50%;
-       }
-
-    *{
-        font-family: "Merienda", cursive;
-    }
-
-    body {
-        
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
-        }
-
-    .bg-custom {
-        background-image: url('img/tesoura.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        }
-
-        .bg-custom2 {
-       
-            background-image: url('img/troll-face-poster.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        
-    }
-
-    .bg-custom-main{
-        background-image: url('img/tesoura.jpg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-    }
-
-        .bg-custom02 {
-            background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   }
-   .bg-custom03 {
-    background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   }
-   .bg-custom04 {
-    background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   }
-   .bg-custom05 {
-       
-    background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   }
-   .bg-custom06 {
-       
-    background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   }
-
-   .bg-custom07{
-    background-image: url('img/06ee2b25bec1ee1c9f855f2578b0c362.jpg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   }
-
-   .mainimage3{
-    /*border-top: 1px dashed rgb(255, 255, 255);*/
-    
-   
-   }
-
-   .border-custom{
-   /* border: 2px dashed rgba(255, 255, 255, 0.452);*/
-   }
-
-   .frorm-01{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -210%);
-   }
-
-   .paragrafo-main{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -140%);
-   }
-
-   .imgdata{
-   
-   }
-
-   header{
-    background-color: black;
-    z-index: 1000;
-   }
-
-    .bg-custon-container{
-        
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-    }
-
-    .img-primaria{
-    
-    }
-
-    .bg-primaria{
-    
-    }
-
-    .bg-custom-segunda{
-        background-image: url('img/tesoura.jpg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-    }
-
-    </style>
-
-</header>
-<body class="bg-black text-white">
-
-    
-   
-
-    <div class="">
-        <div class="bg-custon-container text-gray-800 rounded-xl shadow-lg p-4 w-[360px] font-sans">
-            <div class="bg-primaria mt-5 flex justify-center items-center mb-32">
-                <span class=" text-gray-700 px-2 py-1 rounded-md text-XL">PÁGINAS</span>
-                    <div class="flex gap-2">
-                      <span class="bg-gray-300 px-3 py-1 rounded-md"><a href="fotos.html">FOTOS</a></span>
-                      <span class="bg-gray-300 px-3 py-1 rounded-md"><a href="">TEXTOS</a></span>
-                    </div>
-            
-                <span class="text-sm"></span>
-              </div>
-          
-          
-      
-          <div class="flex items-center gap-2 my-2">
-            <img src="img/stef.png" class="img-primaria w-24 h-24 object-cover" />
-            <div class="text-sm ">
-              <p class="text-gray-300 bg-custom-segunda"> VOCÊ É MUITO ESPECIAL PRA MIM MEU AMOR! OBRIGADO POR  SER <br> MINHA, VOU TE <br> AMAR PRA SEMPRE.</p>
-              
-              <p class="mt-2 italic text-xs text-pink-400" >SITE CRIADO PARA GUARDAR MEMÓRIAS</p>
-            </div>
-          </div>
-      
-          <div class="flex justify-between text-xs text-gray-300 mt-4">
-            <div>
-              <div class="font-semibold text-gray-300 "> ˚⟡˖ ࣪ANIVERSÁRIO <br> DE NAMORO</div>
-              <div class="text-pink-400" > ࣪27/03/2025 ⋆౨ৎ˚˖</div>
-            </div>
-            <div class="text-blue-600 font-bold"></div>
-            <div class="text-pink-400">27/03/2025 ⋆౨ৎ˚⟡˖ ࣪</div>
-          </div>
-      
-          <div class="mt-4 text-sm">
-            <div class="flex justify-between">
-              <div>
-                <span class="text-gray-600"></span> <span class="font-semibold">˚ 𝜗𝜚˚⋆｡☆</span>
-              </div>
-              <div>
-                <span class="text-gray-600"></span> ˚ 𝜗𝜚˚⋆｡☆
-              </div>
-            </div>
-          </div>
-      
-          <div class="flex gap-3 mt-4 text-xl">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-tiktok"></i>
-            <i class="fab fa-spotify"></i>
-          </div>
-         
-        </div>
-      
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <p class="text-gray-400 mb-2 text-sm">Or via social media</p>
+      <div class="flex gap-4 mt-2">
+        <a href="#" class="bg-blue-600 text-white w-9 h-9 flex items-center justify-center rounded-full text-sm">f</a>
+        <a href="#" class="bg-red-600 text-white w-9 h-9 flex items-center justify-center rounded-full text-sm">G</a>
+        <a href="#" class="bg-blue-800 text-white w-9 h-9 flex items-center justify-center rounded-full text-sm">in</a>
+      </div>
     </div>
 
+    <!-- Right Side -->
+    <div class="w-full md:w-1/2  p-8 md:p-10 flex flex-col justify-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Light_bulb_icon.svg/120px-Light_bulb_icon.svg.png" alt="Logo" class="w-8 mb-6 md:mb-8" />
+      <h2 class="text-2xl md:text-3xl font-bold text-black mb-2">Welcome Back!</h2>
+      <p class="text-gray-500 text-sm mb-6">Sign in to continue</p>
 
+      <form id="loginForm" class="space-y-6">
+        <div>
+          <label class="text-sm text-gray-500">Username</label>
+          <input type="text" id="username" value="Dean_Ambrose"
+                 class="w-full border-b border-gray-300 py-2 bg-transparent text-black focus:outline-none focus:border-blue-600">
+        </div>
+        <div>
+          <label class="text-sm text-gray-500">Password</label>
+          <input type="password" id="password"
+                 class="w-full border-b border-gray-300 py-2 bg-transparent text-black focus:outline-none focus:border-blue-600">
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-full font-semibold hover:bg-blue-700 transition">
+          Login Now
+        </button>
+      </form>
+
+      <p class="text-gray-400 text-sm text-center mt-4">Forgot Password ?</p>
+
+      <div class="flex justify-center gap-4 mt-6">
+        <a href="#" class="bg-blue-600 text-white w-9 h-9 flex items-center justify-center rounded-full text-sm">f</a>
+        <a href="#" class="bg-red-600 text-white w-9 h-9 flex items-center justify-center rounded-full text-sm">G</a>
+        <a href="#" class="bg-blue-800 text-white w-9 h-9 flex items-center justify-center rounded-full text-sm">in</a>
+      </div>
+
+      <p class="text-gray-400 text-sm text-center mt-6">Don’t have an account? <a href="#" class="text-black font-medium">Sign up</a></p>
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const senha = document.getElementById('password').value;
+      if (senha === 'senha123') {
+        window.location.href = 'dashboard.html';
+      } else {
+        alert("Senha incorreta!");
+      }
+    });
+  </script>
 
 </body>
 </html>
-
-
