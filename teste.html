@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload com Firebase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+  <div class="max-w-xl mx-auto">
+    <h1 class="text-3xl font-bold mb-4">Upload de Imagem</h1>
+    <input type="file" id="fileInput" class="mb-4" />
+    <button id="uploadBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Enviar</button>
+    
+    <div id="preview" class="mt-6 grid grid-cols-2 gap-4"></div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-storage-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+
+  <script>
+    // Configuração do Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyAKNI2hbz4zLfgIJoV97rR4unM03pceals",
+      authDomain: "ghoul33-3fca9.firebaseapp.com",
+      projectId: "ghoul33-3fca9",
+      storageBucket: "ghoul33-3fca9.appspot.com",
+      messagingSenderId: "714321981126",
+      appId: "1:714321981126:web:626030f755f0950e1231c7"
+    };
+
+    // Inicializa Firebase
+    firebase.initializeApp(firebaseConfig);
+    const storage = firebase.storage();
+    const db = firebase.firestore();
+
+    const fileInput = document.getElementById('fileInput');
+    const uploadBtn = document.getElementById('uploadBtn');
+    const preview = document.getElementById('preview');
+
+    uploadBtn.addEventListener('click', async () => {
+      const file = fileInput.files[0];
+      if (!file) return alert('Escolha um arquivo!');
+
+      // Cria preview local imediato
+      const localURL = URL.createObjectURL(file);
+      const img = document.createElement("img");
+      img.src = localURL;
+      img.className = "w-full h-40 object-cover rounded";
+      preview.prepend(img);
+
+      // Envia para o Firebase Storage
+      const fileRef = storage.ref().child(`imagens/${file.name}`);
+      await fileRef.put(file);
+
+      // Pega a URL da imagem online
+      const url = await fileRef.getDownloadURL();
+
+      // Salva a URL no Firestore
+      await db.collection("imagens").add({
+        url,
+        nome: file.name,
+        criadoEm: new Date()
+      });
+
+      fileInput.value = ""; // Limpa input
+    });
+
+    async function mostrarImagens() {
+      preview.innerHTML = "";
+      const snapshot = await db.collection("imagens").orderBy("criadoEm", "desc").get();
+      snapshot.forEach(doc => {
+        const { url } = doc.data();
+        const img = document.createElement("img");
+        img.src = url;
+        img.className = "w-full h-40 object-cover rounded";
+        preview.appendChild(img);
+      });
+    }
+
+    // Exibe imagens existentes no banco ao carregar a página
+    mostrarImagens();
+  </script>
+</body>
+</html>
