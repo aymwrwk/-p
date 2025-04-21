@@ -1,83 +1,201 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Galeria de Imagens</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 p-6">
-  <div class="max-w-2xl mx-auto">
-    <h1 class="text-3xl font-bold mb-4">Enviar Imagem</h1>
-    
-    <input type="file" id="fileInput" class="mb-2">
-    <button id="uploadBtn" class="bg-blue-600 text-white px-4 py-2 rounded">Enviar</button>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundadores</title>
 
-    <h2 class="text-2xl font-semibold mt-6 mb-2">Imagens:</h2>
-    <div id="gallery" class="grid grid-cols-2 gap-4"></div>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2c5a4d60e.js" crossorigin="anonymous"></script>
+
+  <style>
+    h1, h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 0.1em;
+    }
+
+    body {
+      font-family: 'Press Start 2P', monospace;
+      text-transform: uppercase;
+    }
+
+    .descricao {
+      margin-top: 10px;
+      font-size: 10px;
+      line-height: 2.5;
+    }
+
+    .tag-text {
+      font-size: 8.5px;
+    }
+    
+    .container-main{
+      border: 1px solid rgba(255, 255, 255, 0.096);
+    }
+
+    .container-main:hover{
+      border: 1px solid rgba(255, 255, 255, 0.212);
+    }
+
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-white px-4 py-10">
+
+  <h1 class="text-center text-5xl font-black  tracking-[0.1em] mb-16">FUNDADORES</h1>
+
+  <!-- CARD DEUSDOMEDO -->
+  <center>
+    <div class="container-main bg-[#111111] max-w-[1000px] rounded-md shadow-md p-6 flex flex-col md:flex-row gap-6 mb-10">
+      <!-- ESQUERDA -->
+      <div class="flex flex-col items-center text-center md:w-1/3">
+        <img src="img/IMG_0881.webp" class="w-24 h-24 rounded-full " />
+        <h2 class="text-2xl mt-3 font-black">DUTRA</h2>
+        <p class="text-sm text-gray-400">FUNDADOR</p>
+        <p class="text-sm mt-1 text-gray-300"><i class="fab fa-instagram mr-1"></i>@MATOCOMFACA</p>
+        <div class="tag-text space-y-1 mt-4 text-gray-200">
+          <p> ⚙ HACKING ⚙  PROGRAMAÇÃO ⚙</p>
+          <p>ENGENHARIA SOCIAL</p>
+        </div>
+      </div>
+  
+    <!-- DIREITA -->
+    <div class="descricao text-gray-200 text-left max-w-[600px] md:ml-auto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laborum consequatur sequi at molestias iusto voluptatum laboriosam eum, dolore hic quod eaque deleniti repellat suscipit quo est deserunt esse itaque!
+    </div>
+  </div>
+</center>
+  <!-- CARD DIVINITY -->
+  <center>
+    <div class="container-main bg-[#111111] max-w-[1000px]  rounded-md shadow-md p-6 flex flex-col md:flex-row gap-6">
+      <!-- ESQUERDA -->
+      <div class="flex flex-col items-center text-center md:w-1/3">
+        <img src="img/1744201917528.jpg" class="w-24 h-24 rounded-full" />
+        <h2 class="text-2xl mt-3 font-black">LUDWIG</h2>
+        <p class="text-sm text-gray-400">FUNDADOR</p>
+        <p class="text-sm mt-1 text-gray-300"><i class="fab fa-instagram mr-1"></i>@APREENDERAM</p>
+        <div class="tag-text space-y-1 mt-4 text-gray-200">
+          <p>⚙ ENGENHARIA SOCIAL ⚙ OSINT ⚙ PROGRAMAÇÃO</p>
+          <p>⚙ HUMINT ⚙ IMINT ⚙ SOCMINT</p>
+        </div>
+      </div>
+      <!-- DIREITA -->
+      <div class="descricao text-gray-200 text-left max-w-[600px] md:ml-auto">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga eligendi expedita ipsum, mollitia, aliquid voluptatibus optio at possimus quia iusto iste consectetur beatae excepturi officiis molestias non ex nihil.
+      </div>
+    </div>
+  </center>
+<br>
+<br>
+  <center>
+    <div class="container-main bg-[#111111] max-w-[1000px]  rounded-md shadow-md p-6 flex flex-col md:flex-row gap-6">
+      <!-- ESQUERDA -->
+      <div class="flex flex-col items-center text-center md:w-1/3">
+        <img src="img/imagem.png" class="w-24 h-24 rounded-full" />
+        <h2 class="text-2xl mt-3 font-black">MI</h2>
+        <p class="text-sm text-gray-400">MEMBRO</p>
+        <p class="text-sm mt-1 text-gray-300"><i class="fab fa-instagram mr-1"></i>@CUZCUZFAG</p>
+        <div class="tag-text space-y-1 mt-4 text-gray-200">
+          <p>⚙ SABE POHA NENHUMA, <br> PAGOU PRA ENTRAR ⚙ </p>
+    
+        </div>
+      </div>
+      <!-- DIREITA -->
+      <div class="descricao text-gray-200 text-left max-w-[600px] md:ml-auto">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga eligendi expedita ipsum, mollitia, aliquid voluptatibus optio at possimus quia iusto iste consectetur beatae excepturi officiis molestias non ex nihil.
+      </div>
+    </div>
+  </center>
+
+  <br>
+<br>
+  <div>
+    <body class="bg-[#0a0a0a] text-white py-10 px-4">
+      <h1 class="text-center text-6xl font-bold tracking-[0.1em] mb-10">MEMBROS</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div class="bg-[#0b0b0b] container-main rounded-md p-5 w-full sm:max-w-md md:max-w-lg mx-auto flex flex-col gap-4">
+          <div class="flex items-start gap-4">
+            <img src="https://i.imgur.com/WjQ9Vop.png" class="w-12 h-12 rounded-full border border-white" />
+            <div>
+              <h2 class="text-white text-lg tracking-widest font-bold">DYAVOL</h2>
+              <p class="text-xs text-gray-400 uppercase">membro</p>
+              <p class="text-xs text-gray-300 mt-1"><i class="fab fa-instagram mr-1"></i>@matocomfaca</p>
+            </div>
+          </div>
+          <div class="text-xs text-gray-300 space-y-1 pl-1">
+            <p><i class="fas fa-shield-alt mr-2"></i>OSINT</p>
+            <p><i class="fas fa-skull-crossbones mr-2"></i>HACKING</p>
+            <p><i class="fas fa-user-secret mr-2"></i>ENGENHARIA SOCIAL</p>
+            <p><i class="fas fa-brain mr-2"></i>HUMINT</p>
+          </div>
+          <p class="text-xs text-gray-200 mt-2 leading-relaxed font-mono uppercase">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis totam officiis enim ex sapiente, dicta aliquam nobis accusantium! Esse hic aperiam nemo amet commodi minus ipsa vero consectetur, adipisci praesentium.
+          </p>
+        </div>
+        <div class="bg-[#0b0b0b] container-main rounded-md p-5 w-full sm:max-w-md md:max-w-lg mx-auto flex flex-col gap-4">
+          <div class="flex items-start gap-4">
+            <img src="https://i.imgur.com/WjQ9Vop.png" class="w-12 h-12 rounded-full border border-white" />
+            <div>
+              <h2 class="text-white text-lg tracking-widest font-bold">DYAVOL</h2>
+              <p class="text-xs text-gray-400 uppercase">membro</p>
+              <p class="text-xs text-gray-300 mt-1"><i class="fab fa-instagram mr-1"></i>@matocomfaca</p>
+            </div>
+          </div>
+          <div class="text-xs text-gray-300 space-y-1 pl-1">
+            <p><i class="fas fa-shield-alt mr-2"></i>OSINT</p>
+            <p><i class="fas fa-skull-crossbones mr-2"></i>HACKING</p>
+            <p><i class="fas fa-user-secret mr-2"></i>ENGENHARIA SOCIAL</p>
+            <p><i class="fas fa-brain mr-2"></i>HUMINT</p>
+          </div>
+          <p class="text-xs text-gray-200 mt-2 leading-relaxed font-mono uppercase">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id saepe consequatur deleniti vitae ullam magni blanditiis laudantium, in dicta? Ratione temporibus nisi sunt voluptatum eos totam, aliquid expedita nesciunt?
+          </p>
+        </div>
+        <div class="bg-[#0b0b0b] container-main rounded-md p-5 w-full sm:max-w-md md:max-w-lg mx-auto flex flex-col gap-4">
+          <div class="flex items-start gap-4">
+            <img src="https://i.imgur.com/WjQ9Vop.png" class="w-12 h-12 rounded-full border border-white" />
+            <div>
+              <h2 class="text-white text-lg tracking-widest font-bold">DYAVOL</h2>
+              <p class="text-xs text-gray-400 uppercase">membro</p>
+              <p class="text-xs text-gray-300 mt-1"><i class="fab fa-instagram mr-1"></i>@matocomfaca</p>
+            </div>
+          </div>
+          <div class="text-xs text-gray-300 space-y-1 pl-1">
+            <p><i class="fas fa-shield-alt mr-2"></i>OSINT</p>
+            <p><i class="fas fa-skull-crossbones mr-2"></i>HACKING</p>
+            <p><i class="fas fa-user-secret mr-2"></i>ENGENHARIA SOCIAL</p>
+            <p><i class="fas fa-brain mr-2"></i>HUMINT</p>
+          </div>
+          <p class="text-xs text-gray-200 mt-2 leading-relaxed font-mono uppercase">
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ad quisquam magni maxime quia, dolores nisi aut iste facilis consectetur quo aspernatur alias cupiditate suscipit corporis itaque dolor soluta provident?
+          </p>
+        </div>
+        <div class="bg-[#0b0b0b] container-main rounded-md p-5 w-full sm:max-w-md md:max-w-lg mx-auto flex flex-col gap-4">
+          <div class="flex items-start gap-4">
+            <img src="https://i.imgur.com/WjQ9Vop.png" class="w-12 h-12 rounded-full border border-white" />
+            <div>
+              <h2 class="text-white text-lg tracking-widest font-bold">DYAVOL</h2>
+              <p class="text-xs text-gray-400 uppercase">membro</p>
+              <p class="text-xs text-gray-300 mt-1"><i class="fab fa-instagram mr-1"></i>@matocomfaca</p>
+            </div>
+          </div>
+          <div class="text-xs text-gray-300 space-y-1 pl-1">
+            <p><i class="fas fa-shield-alt mr-2"></i>OSINT</p>
+            <p><i class="fas fa-skull-crossbones mr-2"></i>HACKING</p>
+            <p><i class="fas fa-user-secret mr-2"></i>ENGENHARIA SOCIAL</p>
+            <p><i class="fas fa-brain mr-2"></i>HUMINT</p>
+          </div>
+          <p class="text-xs text-gray-200 mt-2 leading-relaxed font-mono uppercase">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cum accusamus, possimus molestias porro ratione quidem reiciendis vero, praesentium ipsam, aliquid consequuntur aperiam nostrum omnis excepturi veniam numquam architecto. Incidunt.
+          </p>
+        </div>
+      </div>
+    
+    </body>
   </div>
 
-  <!-- SDKs do Firebase (mantêm-se no HTML) -->
-  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-storage-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
-
-  <!-- Script principal -->
-  <script src="script.js">
-    // Configuração do Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyAKNI2hbz4zLfgIJoV97rR4unM03pceals",
-  authDomain: "ghoul33-3fca9.firebaseapp.com",
-  projectId: "ghoul33-3fca9",
-  storageBucket: "ghoul33-3fca9.appspot.com",
-  messagingSenderId: "714321981126",
-  appId: "1:714321981126:web:626030f755f0950e1231c7"
-};
-
-// Inicializar Firebase
-firebase.initializeApp(firebaseConfig);
-const storage = firebase.storage();
-const db = firebase.firestore();
-
-const fileInput = document.getElementById("fileInput");
-const uploadBtn = document.getElementById("uploadBtn");
-const gallery = document.getElementById("gallery");
-
-// Upload de imagem
-uploadBtn.addEventListener("click", async () => {
-  const file = fileInput.files[0];
-  if (!file) return alert("Selecione uma imagem!");
-
-  const path = `imagens/${Date.now()}_${file.name}`;
-  const ref = storage.ref(path);
-
-  await ref.put(file);
-  const url = await ref.getDownloadURL();
-
-  await db.collection("imagens").add({ url, createdAt: new Date() });
-
-  mostrarImagem(url);
-  fileInput.value = "";
-});
-
-// Mostrar imagem na tela
-function mostrarImagem(url) {
-  const img = document.createElement("img");
-  img.src = url;
-  img.className = "w-full h-40 object-cover rounded shadow";
-  gallery.prepend(img);
-}
-
-// Carregar imagens do Firestore
-async function carregarImagens() {
-  const snap = await db.collection("imagens").orderBy("createdAt", "desc").get();
-  snap.forEach(doc => {
-    const { url } = doc.data();
-    mostrarImagem(url);
-  });
-}
-
-window.addEventListener("DOMContentLoaded", carregarImagens);
-
-  </script>
 </body>
 </html>
