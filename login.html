@@ -48,39 +48,29 @@
       
             <form id="loginForm" class="space-y-6">
               
-              <div>
-                <label class="text-sm text-gray-400"></label>
-                <input placeholder=" Пароль" type="password" id="password"
-                  class="w-full border rounded-md border-white py-2 bg-white text-white focus:outline-none focus:border-white">
-              </div>
-      
-              <button type="submit"
-                class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
-                Войти сейчас
-              </button>
-            </form>
-      
-            <p class="text-gray-400 text-sm text-center mt-4">Забыли пароль? К черту это</p>
-      
-           <script>
-            
-document.getElementById('loginForm').addEventListener('submit', function (e) {
-  e.preventDefault();
-  const senha = document.getElementById('password').value;
-  if (senha === '33') {
-    window.location.href = 'xyz.html';
-  } else {
-    alert("Senha incorreta!");
-  }
-});
+   <div>
+    <label class="text-sm text-gray-400"></label>
+    <input placeholder=" Пароль" type="password" id="password"
+    class="w-full border rounded-md border-white py-2 bg-white text-white focus:outline-none focus:border-white">
+    </div>
+  <button type="submit" class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+    Войти сейчас
+  </button>
+  </form>
+  <p class="text-gray-400 text-sm text-center mt-4">Забыли пароль? К черту это</p>
 
-           </script>
-            
-          </div>
-      
-        </div>
-      
-     
-      
-      </body>
+<script>         
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const senha = document.getElementById('password').value;
+      if (senha === '33') {
+        window.location.href = 'xyz.html';
+      } else {
+        alert("Senha incorreta!");
+      }
+    });
+</script>
+</div>
+</div>
+</body>
 </head>      
