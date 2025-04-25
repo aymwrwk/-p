@@ -3,50 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login UI</title>
+  <title>Login</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="script.js"></script>
+  <style>
+    * {
+      cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
+    }
+    .bg-custom {
+      background-image: url('img/d9m22gl-d57384c9-d629-4335-95ed-ec7e68e4ec57.gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
-<style>
+<body class="bg-custom flex items-center justify-center min-h-screen px-4">
 
-*{
-  cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
-}
+  <div class="backdrop-blur-sm bg-white/10 shadow-2xl rounded-2xl w-full max-w-md p-8 space-y-6 text-white">
+    <h2 class="text-3xl font-bold text-center">Bem-vindo 👋</h2>
+    <p class="text-center text-gray-300">Faça login para continuar</p>
 
-  .bg-custom{
-    background-image: url('img/bg-punpun.jpg');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-  }
-  .classborder {
+    <form id="loginForm" class="space-y-5">
+      <div>
+        <label for="username" class="text-sm text-gray-300">Usuário</label>
+        <input type="text" id="username" placeholder="Seu nome de usuário"
+          class="w-full mt-1 p-3 rounded-lg bg-black/20 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white placeholder-gray-400 text-white">
+      </div>
 
-  }
-</style>
+      <div>
+        <label for="password" class="text-sm text-gray-300">Senha</label>
+        <input type="password" id="password" placeholder="Пароль"
+          class="w-full mt-1 p-3 rounded-lg bg-black/20 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white placeholder-gray-400 text-white">
+      </div>
 
-  <body class="bg-custom flex items-center justify-center min-h-screen font-sans px-4">
-  <div class=" backdrop-blur-md rounded-xl flex flex-col md:flex-row w-full max-w-6xl shadow-2xl overflow-hidden bg-white/10">
-<br>
-<br>
-  <div class=" w-42  flex items-center justify-center ">
-      <img src="img/punpun02.gif" alt="Illustration" class="w-[200px]"  />
+      <button type="submit"
+        class="w-full bg-red-600 hover:bg-red-700 transition-all duration-200 text-white py-3 rounded-lg font-semibold">
+        Войти сейчас
+      </button>
+    </form>
   </div>
-  <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center ">
-    <h2 class="text-2xl md:text-3xl font-bold text-white mb-2 text-center">Добро пожаловать!</h2>
-    <p class="text-gray-300 text-sm text-center mb-6">Войдите, чтобы продолжить</p>
-    <form id="loginForm" class="space-y-6"> 
-   <div>
-      <label class="text-sm text-gray-400"></label>
-      <input placeholder=" Пароль" type="password" id="password"
-      class="w-full border rounded-md border-white py-2 bg-white text-white focus:outline-none focus:border-white">
-    </div>
-  <button type="submit" class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
-    Войти сейчас
-  </button>
-  </form>
-  <p class="text-gray-400 text-sm text-center mt-4">Забыли пароль? К черту это</p>
 
-<script>         
+  <script>
     document.getElementById('loginForm').addEventListener('submit', function (e) {
       e.preventDefault();
       const senha = document.getElementById('password').value;
@@ -56,8 +54,6 @@
         alert("Senha incorreta!");
       }
     });
-</script>
-</div>
-</div>
+  </script>
 </body>
-</head>      
+</html>
