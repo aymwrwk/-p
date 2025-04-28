@@ -1,70 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login UI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate your state</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <style>
-
-*{
-  cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
-}
-
   .bg-custom{
-    background-image: url('img/bg-punpun.jpg');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
+    background-image: url(img/punpunred.gif);
+    background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
   }
-
-  .bg-discord{
-    background-image: url('img/l12c7vKVRCd-XLIdDkLUDg.png');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-  }
-
-  .bg-instagram{
-    background-image: url('img/insta.png');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-  }
-  .bg-main{
-    width: 150px !important;
-    height: 150px !important;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-
-
 </style>
-<body class="bg-custom flex items-center justify-center min-h-screen font-sans px-8 py-8">
 
-  <div class="flex items-center justify-center h-screen">
-   
-      <div class="h-92  flex flex-col md:flex-row w-full rounded-xl shadow-2xl overflow-hidden">
-        <div class="  w-full  p-8 md:p-10 flex flex-col items-center justify-center text-center ">
-          <img src="img/196065.gif" alt="Illustration" class="bg-main" />
-          <h2 class="text-2xl md:text-3xl font-bold text-black mb-2">Привет!</h2>
-          <p class="text-gray-200 text-sm md:text-base mb-6">Добро пожаловать в платформу для управления потребностями в сфере недвижимости.</p>
-          <div class="flex gap-4 mb-6 flex-col sm:flex-row">
-            <button class="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition"><a href="login.html">Login</a></button>
-            <button class="border border-black text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-black hover:text-white transition"><a href="teste.html">Sign Up </a></button>
-          </div>
-          <p class="text-gray-200 mb-2 text-sm">Or via social media</p>
-          <div class="flex gap-4 mt-2">
-            <a href="#" class="bg-discord text-white w-9 h-9 flex items-center justify-center rounded-full text-sm"></a>
-            <a href="#" class="bg-instagram text-white w-9 h-9 flex items-center justify-center rounded-full text-sm"></a>
-          </div>
-        </div>
- 
+<body class="bg-cover bg-center rounded-3xl overflow-hidden w-full max-w-md h-[600px]" ;>
+
+  <div >
+
+    <!-- Conteúdo -->
+    <div class="bg-custom absolute inset-0 bg-black flex flex-col items-center justify-center text-center p-6">
+
+      <div class="absolute top-4 left-4 text-white/70 text-xl">
+        <i class="fas fa-question-circle"></i>
+      </div>
+
+      <div class="absolute top-4 right-4 text-white/70 text-xl">
+        <i class="fas fa-camera"></i>
+      </div>
+
+      <div class="absolute top-4 inset-x-0 flex justify-center">
+        <div class="w-2 h-2 rounded-full bg-white/70"></div>
+      </div>
+
+      <div class="mt-16">
+        <p class="text-sm text-white/70 mb-2">Mental check-in</p>
+        <h1 class="text-3xl font-bold text-white mb-4">Rate your state</h1>
+        <p class="text-sm text-white/60 mb-10">Select at least 3 options that are closer<br>to your mental state right now.</p>
+
+        <button class="bg-white/20 hover:bg-white/30 text-white px-8 py-3 rounded-full backdrop-blur-md transition font-medium">
+          Get started
+        </button>
+      </div>
+
+    </div>
+
   </div>
 
-
-
+  <!-- FontAwesome para os ícones -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
