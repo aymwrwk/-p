@@ -5,30 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rate your state</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <style>
+  body {
+    font-family: 'Press Start 2P', monospace;
+  }
 
-body {
-      font-family: 'Space Grotesk', sans-serif;
-    }
-
-  .bg-custom{
+  .bg-custom {
     background-image: url(img/thumb-1920-1307862.png);
     background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .button{
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, 290%);
   }
 </style>
 
-<body class="bg-cover bg-center rounded-3xl overflow-hidden w-full max-w-md h-[600px]" ;>
-
-  <div >
-
-    <!-- Conteúdo -->
-    <div class="bg-custom absolute inset-0 bg-black flex flex-col  p-6">
-
+<body class=" bg-center rounded-3xl overflow-hidden z-50 w-[60%] max-w-sm ">
+  <div class="absolute top-2 left-1/2 transform -translate-x-1/2  px-4 py-2 border flex items-center gap-2 z-20">
+    <input id="senhaInput" type="password" placeholder="Digite a senha"
+      class="px-3 py-1 rounded-lg text-black focus:outline-none text-sm">
+      
+  </div>
+ 
+  <div>
+    <div class="bg-custom absolute inset-0 bg-black flex flex-col p-6">
       <div class="absolute top-4 left-4 text-white/70 text-xl">
         <i class="fas fa-question-circle"></i>
       </div>
@@ -40,46 +48,29 @@ body {
       <div class="absolute top-4 inset-x-0 flex justify-center">
         <div class="w-2 h-2 rounded-full bg-white/70"></div>
       </div>
-
-      <center>
-        <div class="mt-16 rounded-sm p-8 mt-2">
-        
-          <a href="teste.html">
-            <h1 id="hora-brasilia" class=" text-3xl font-bold text-black mb-4">
-            </h1>
-          </a>
-          
-        </div>
-        
-      </center>
-<br>
-<br>
-<br>
-<br>
     </div>
-
   </div>
-
-  <!-- FontAwesome para os ícones -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <center>
+    <div class="button">
+     <button onclick="verificarSenha()"
+         class="bg-white text-black px-3 py-1 rounded-lg text-sm font-semibold ">Entrar</button>
+    </div>
+  </center>
+  <!-- Script para verificação -->
   <script>
-    function atualizarHoraBrasilia() {
-      const agora = new Date();
-  
-      // Converte a hora para o fuso de Brasília (GMT-3)
-      const horaBrasilia = new Date(agora.toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }));
-  
-      const horas = horaBrasilia.getHours().toString().padStart(2, '0');
-      const minutos = horaBrasilia.getMinutes().toString().padStart(2, '0');
-      const segundos = horaBrasilia.getSeconds().toString().padStart(2, '0');
-  
-      document.getElementById("hora-brasilia").textContent = ` ${horas}:${minutos}:${segundos}`;
+    function verificarSenha() {
+      const senhaCorreta = "1234"; // Defina aqui a senha correta
+      const senhaDigitada = document.getElementById("senhaInput").value;
+
+      if (senhaDigitada === senhaCorreta) {
+        window.location.href = "xyz.html"; // Altere para o link desejado
+      } else {
+        alert("Senha incorreta!");
+      }
     }
-  
-    // Atualiza a cada segundo
-    setInterval(atualizarHoraBrasilia, 1000);
-    atualizarHoraBrasilia(); // Chama inicialmente
   </script>
-  
+
+  <!-- FontAwesome para ícones -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
