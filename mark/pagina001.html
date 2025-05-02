@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Retro Market</title>
+  <title>73</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 
-<style>
-  *{
-    cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
-  }
-</style>
-<body class="bg-white text-gray-800 font-sans">
+  <style>
+
+
+    *{
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
+}
+
+body {
+  font-family: 'Press Start 2P', monospace;
+    }
+
+    .texto-normal{
+      font-family: Arial, Helvetica, sans-serif ;
+    }
+
+    .texto-normal2{
+      font-family: Arial, Helvetica, sans-serif ;
+      font-size: 16px;
+    }
+
+
+    li{
+      font-size: 10px;
+    }
+  </style>
+
+<body class="bg-white text-gray-800 ">
   <!-- Header -->
-  <div class="flex justify-between items-center px-6 py-4 border-b bg-gray-100">
-    <h1 class="text-2xl font-bold"> Retro Market <span class="text-sm font-normal">anonymous marketplace</span></h1>
-    <div class="space-x-4 text-sm">
-      <span>messages 0</span>
-      <span>orders 0</span>
-      <span>account <strong>$0.00</strong></span>
+  <center>
+    <div class="">
+      <button id="theme-toggle" class=" p-2 rounded-md h transition flex items-center justify-center">
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="text-black h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+        </svg>
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h2m-18 0H3m15.364-6.364l1.414 1.414M4.222 19.778l1.414-1.414M19.778 19.778l-1.414-1.414M4.222 4.222l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
+        </svg>
+      </button>
     </div>
-  </div>
+  </center>
 
   <!-- Search Bar -->
   <div class="px-6 py-2 border-b">
-    <input type="text" placeholder="Search" class="border px-2 py-1 w-full max-w-md">
+    <input type="text" id="searchInput" placeholder="Search" class="border px-2 py-1 w-full max-w-md">
+
   </div>
 
-  <!-- Main Content -->
+
   <div class="flex flex-col md:flex-row">
-    <!-- Sidebar -->
+
     <div class="md:w-1/4 border-r px-4 py-4">
-      <h2 class="font-semibold text-lg mb-2">Shop by Category</h2>
+   
       <ul class="space-y-1 text-sm">
-        <li><strong>Electronics</strong> (880)</li>
-        <li class="ml-2">Retro Consoles (310)</li>
-        <li class="ml-2">Walkmans (95)</li>
-        <li class="ml-2">CRT Monitors (60)</li>
+       
+    
+      <a href="../xyz.html">
+            <li class="ml-2 underline ">Index</li>
+      </a>
+     
+      <a href="./pagina002.html">
+        <li class="ml-5 underline">Art</li>
+  </a>
       </ul>
     </div>
 
+    
     <!-- Products Grid -->
-    <div class="md:w-3/4 w-full px-6 py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="md:w-3/4 w-full px-6 py-4 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <!-- Product Cards -->
       <!-- Repeated 12 items with varied images -->
       <!-- Loop simulation -->
@@ -52,89 +85,132 @@
       <!-- Example 1-12 -->
       <template id="products">
         [1,2,3,4,5,6,7,8,9,10,11,12].map(i => `
-        <div class="border p-2 text-center">
+        <div class="product border p-2 text-center">
           <img src="img/punpun03.gif" alt="item${i}" class="mx-auto mb-2">
-          <p class="font-semibold text-sm">Product Title #${i}</p>
-          <p class="text-xs text-gray-600">Description ${i}</p>
-          <p class="text-red-600 font-semibold mt-1">₿${(Math.random() * 10 + 0.5).toFixed(2)}</p>
+          <p class="texto-normal font-semibold text-sm">Product Title #${i}</p>
+          <p class="texto-normal text-xs text-gray-600">Description ${i}</p>
+          <p class="texto-normal text-red-600 font-semibold mt-1">₿${(Math.random() * 10 + 0.5).toFixed(2)}</p>
         </div>`)
       </template>
 
       <!-- Hardcoded example products -->
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">NeoBoy Retro Console</p>
-        <p class="text-xs text-gray-600">Condition: Like New</p>
-        <p class="text-red-600 font-semibold mt-1">₿1.30</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">NeoBoy</p>
+        <p class="text-xs text-gray-600">Condition</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿1.30</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">HoloRare Dragon Card</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">HoloRare</p>
         <p class="text-xs text-gray-600">1st Edition</p>
-        <p class="text-red-600 font-semibold mt-1">₿23.33</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿23.33</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">Signed Manga Vol. 1</p>
-        <p class="text-xs text-gray-600">Mint Condition</p>
-        <p class="text-red-600 font-semibold mt-1">₿12.50</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Manga Vol. 1</p>
+        <p class="text-xs text-gray-600">Condition</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿12.50</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">Game Boy Advance SP</p>
-        <p class="text-xs text-gray-600">Includes Charger</p>
-        <p class="text-red-600 font-semibold mt-1">₿3.45</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Game Boy</p>
+        <p class="text-xs text-gray-600">Includes</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿3.45</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">CRT TV 13" Retro</p>
-        <p class="text-xs text-gray-600">Perfect for old consoles</p>
-        <p class="text-red-600 font-semibold mt-1">₿2.10</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">CRT 13</p>
+        <p class="text-xs text-gray-600">Perfect consoles</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿2.10</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">Cassette Tape Pack</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Cassette</p>
         <p class="text-xs text-gray-600">90s Mixtape Vibes</p>
-        <p class="text-red-600 font-semibold mt-1">₿0.98</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿0.98</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">Retro Mouse</p>
         <p class="text-xs text-gray-600">Classic PS/2 Input</p>
-        <p class="text-red-600 font-semibold mt-1">₿1.20</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿1.20</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">Vinyl Album Pack</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Vinyl Album</p>
         <p class="text-xs text-gray-600">70s Rock</p>
-        <p class="text-red-600 font-semibold mt-1">₿3.99</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿3.99</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">Old-School Joystick</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Joystick</p>
         <p class="text-xs text-gray-600">USB Adapter</p>
-        <p class="text-red-600 font-semibold mt-1">₿2.70</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿2.70</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">Tamagotchi Clone</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Tamagotchi</p>
         <p class="text-xs text-gray-600">Still Working!</p>
-        <p class="text-red-600 font-semibold mt-1">₿1.75</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿1.75</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">Retro Alarm Clock</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Alarm Clock</p>
         <p class="text-xs text-gray-600">Loud & Reliable</p>
-        <p class="text-red-600 font-semibold mt-1">₿0.88</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿0.88</p>
       </div>
-      <div class="border p-2 text-center">
-        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
-        <p class="font-semibold text-sm">Mini CRT Security TV</p>
+      <div class="product border p-2 text-center">
+        <img src="../img/troll-face-poster.png" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Security TV</p>
         <p class="text-xs text-gray-600">Aesthetic Display</p>
-        <p class="text-red-600 font-semibold mt-1">₿2.49</p>
+        <p class="texto-normal  text-red-600 font-semibold mt-1">₿2.49</p>
       </div>
     </div>
   </div>
+
+
+
 </body>
+<script>
+  const button = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+  const iconSun = document.getElementById('icon-sun');
+  const iconMoon = document.getElementById('icon-moon');
+
+  button.addEventListener('click', () => {
+    html.classList.toggle('dark');
+    if (html.classList.contains('dark')) {
+      document.body.classList.add('bg-[#0a0a0a]', 'text-white');
+      document.body.classList.remove('bg-white', 'text-black');
+      iconSun.classList.remove('hidden');
+      iconMoon.classList.add('hidden');
+    } else {
+      document.body.classList.add('bg-white', 'text-black');
+      document.body.classList.remove('bg-[#0a0a0a]', 'text-white');
+      iconSun.classList.add('hidden');
+      iconMoon.classList.remove('hidden');
+    }
+  });
+</script>
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const products = document.querySelectorAll('.product');
+
+  searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    
+    products.forEach(product => {
+      const title = product.querySelector('p.font-semibold').textContent.toLowerCase();
+      const description = product.querySelector('p.text-xs').textContent.toLowerCase();
+
+      if (title.includes(searchTerm) || description.includes(searchTerm)) {
+        product.style.display = 'block';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  });
+</script>
 
 </html>
