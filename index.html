@@ -10,11 +10,12 @@
 
 <style>
   body {
+    background-color: white;
     font-family: 'Press Start 2P', monospace;
   }
 
   .bg-custom {
-    background-image: url(img/thumb-1920-1307862.png);
+    background-image: url(img/bg1vdd.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,21 +25,35 @@
     position: absolute;
 
     left: 50%;
-    transform: translate(-50%, 250%);
+    transform: translate(-50%, 960%);
+  }
+
+  .custom1{
+    width: 65%;
+    margin-left: 20px;
+  }
+
+  .custom2{
+    
+    position: absolute;
+z-index: 10001;
+    left: 50%;
+    transform: translate(-50%, 358%);
   }
 </style>
 
 <body class=" bg-center rounded-3xl overflow-hidden z-50 w-[60%] max-w-sm ">
-  <div class="absolute top-2 left-1/2 transform -translate-x-1/2  px-4 py-2 border flex items-center gap-2 z-20">
+  <div class="custom2">
     <br>
-    <input id="senhaInput" type="password" placeholder="Digite a senha"
-      class="px-3 py-1 rounded-lg text-black focus:outline-none text-sm">
+    <input id="senhaInput" type="password" placeholder="password"
+      class="custom1 px-1 py-1  text-black  text-sm">
       
   </div>
- 
+
+  
   <div>
-    <div class="bg-custom absolute inset-0 bg-black flex flex-col p-6">
-      <div class="absolute top-4 left-4 text-white/70 text-xl">
+    <div class="bg-custom absolute inset-0 flex flex-col p-6">
+      <div class="absolute top-4 left-4 text-xl">
         <i class="fas fa-question-circle"></i>
       </div>
 
@@ -47,7 +62,7 @@
       </div>
 
       <div class="absolute top-4 inset-x-0 flex justify-center">
-        <div class="w-2 h-2 rounded-full bg-white/70"></div>
+        <div class="w-2 h-2 rounded-full "></div>
       </div>
     </div>
   </div>
@@ -56,20 +71,29 @@
      <button onclick="verificarSenha()"
          class="bg-white text-black px-3 py-1 rounded-lg text-sm font-semibold ">Entrar</button>
     </div>
+    <!-- Aviso de erro -->
+<div id="mensagemErro" class="w-52 hidden absolute top-4 right-4 z-50 text-red-700 bg-red-100 border border-red-400 rounded px-3 py-1 text-xs font-semibold">
+  Senha incorreta. Tente novamente!
+</div>
+
   </center>
-  <!-- Script para verificação -->
   <script>
     function verificarSenha() {
-      const senhaCorreta = "1234"; // Defina aqui a senha correta
+      const senhaCorreta = "1234";
       const senhaDigitada = document.getElementById("senhaInput").value;
-
+      const mensagemErro = document.getElementById("mensagemErro");
+  
       if (senhaDigitada === senhaCorreta) {
-        window.location.href = "xyz.html"; // Altere para o link desejado
+        window.location.href = "xyz.html";
       } else {
-        alert("Senha incorreta!");
+        mensagemErro.classList.remove("hidden");
+        mensagemErro.textContent = "Senha incorreta. Tente novamente!";
       }
     }
   </script>
+  
+  
+  
 
   <!-- FontAwesome para ícones -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
