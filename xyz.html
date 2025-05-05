@@ -33,6 +33,14 @@ body {
     li{
       font-size: 10px;
     }
+
+    .custom-text{
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+    font-size: 17px;
+    text-overflow: initial;
+    font-weight: bolder;
+    }
   </style>
 
 <body class="bg-white text-gray-800 ">
@@ -61,25 +69,24 @@ body {
 
     <div class="md:w-1/4 border-r px-4 py-4">
    
-      <ul class="space-y-1 text-sm">
+      <ul class="space-y-3 text-sm">
        
     
-      <a href="./mark/pagina001.html">
-            <li class="ml-2 underline ">Art</li>
-      </a>
-  
-      <a href="./mark/pagina002.html">
-        <li class="ml-5 underline">Art</li>
-  </a>
+        <li class="custom-text ml-5 underline ">
+          <a href="./mark/pagina002.html">Textos</a>
+        </li>
+   
+        <li class="custom-text inline-block ml-10 underline ">
+          <a href="./mark/pagina002.html">+Mais</a>
+        </li>
+        
       </ul>
     </div>
 
     
     <!-- Products Grid -->
     <div class="md:w-3/4 w-full px-6 py-4 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-     <p>
-      produtos caros sao mais diversos fo que adiviersos
-     </p>
+
       <template id="products">
         [1,2,3,4,5,6,7,8,9,10,11,12].map(i => `
         <div class="product border p-2 text-center">
@@ -166,18 +173,7 @@ body {
     </div>
   </div>
 
-  <center>
-    <footer class="mt-5 p-5 bg-black/10 text-neutral-900 ">
-      <ul class="grid grid-cols-2" >
-        <li class="text-1xl underline">
-          Discord
-        </li>
-        <li class="text-1xl underline">
-          Instagram
-        </li>
-      </ul>
-    </footer>
-  </center>
+ 
 
 </body>
 <script>

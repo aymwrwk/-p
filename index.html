@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Página de Login</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
@@ -15,75 +15,57 @@
   }
 
   .bg-custom {
-    background-image: url(img/bg1vdd.jpg);
+    background-image: url(img/haaa.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
   }
 
-  .button{
-    position: absolute;
+  .custom-text{
 
-    left: 50%;
-    transform: translate(-50%, 960%);
+    text-transform: uppercase;
+    font-size: 16px;
+    text-overflow: initial;
+    text-align: center;
+    font-weight: bolder;
   }
 
-  .custom1{
-    border: white;
-    width: 65%;
-    margin-left: 20px;
-  }
-
-  .custom2{
-    
-    position: absolute;
-z-index: 10001;
-    left: 50%;
-    transform: translate(-50%, 352%);
-  }
 </style>
 
-<body class=" bg-center overflow-hidden z-50 w-[60%] max-w-sm ">
-  <div class="custom2">
-    <br>
+<body class="relative min-h-screen flex items-center justify-center bg-custom px-4">
+
+  <!-- Campo de senha -->
+  <div class="w-full max-w-sm flex flex-col gap-4 items-center">
     <input id="senhaInput" type="password" placeholder="password"
-      class="custom1 px-1 py-1  text-black  text-sm">
-      
-  </div>
+      class="w-full px-4 py-2 border border-gray-300 rounded-md text-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-500">
+    
+    <button onclick="verificarSenha()"
+      class="custom-text bg-black text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-gray-800 transition">
+      Sign In
+    </button>
 
-  
-  <div>
-    <div class="bg-custom absolute inset-0 flex flex-col p-6">
-      <div class="absolute top-4 left-4 text-xl">
-        <i class="fas fa-question-circle"></i>
-      </div>
-
-      <div class="absolute top-4 right-4 text-white/70 text-xl">
-        <i class="fas fa-camera"></i>
-      </div>
-
-      <div class="absolute top-4 inset-x-0 flex justify-center">
-        <div class="w-2 h-2 rounded-full "></div>
-      </div>
-    </div>
-  </div>
-  <center>
-    <div class="button">
-     <button onclick="verificarSenha()"
-         class="bg-white text-black px-3 py-1 rounded-lg text-sm font-semibold ">sign in</button>
-    </div>
     <!-- Aviso de erro -->
-<div id="mensagemErro" class="w-52 hidden absolute top-4 right-4 z-50 text-red-700 bg-red-100 border border-red-400 rounded px-3 py-1 text-xs font-semibold">
-  Senha incorreta. Tente novamente!
-</div>
+    <div id="mensagemErro" class="hidden w-full text-center text-red-700 bg-red-100 border border-red-400 rounded px-3 py-2 text-xs font-semibold">
+      Senha incorreta. Tente novamente!
+    </div>
+  </div>
 
-  </center>
+  <!-- Ícones posicionados -->
+  <div class="absolute top-4 left-4 text-xl text-black">
+    <i class="fas fa-question-circle"></i>
+  </div>
+
+  <div class="absolute top-4 right-4 text-xl text-black/70">
+    <i class="fas fa-camera"></i>
+  </div>
+
   <script>
     function verificarSenha() {
       const senhaCorreta = "1234";
       const senhaDigitada = document.getElementById("senhaInput").value;
       const mensagemErro = document.getElementById("mensagemErro");
-  
+
       if (senhaDigitada === senhaCorreta) {
         window.location.href = "xyz.html";
       } else {
@@ -92,9 +74,6 @@ z-index: 10001;
       }
     }
   </script>
-  
-  
-  
 
   <!-- FontAwesome para ícones -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
