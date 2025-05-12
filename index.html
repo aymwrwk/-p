@@ -1,81 +1,220 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Login</title>
+  <title>73</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 
-<style>
-  body {
-    background-color: white;
-    font-family: 'Press Start 2P', monospace;
-  }
+  <style>
 
-  .bg-custom {
-    background-image: url(img/haaa.gif);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-  }
+    *{
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
+}
 
-  .custom-text{
+body {
+  font-family: 'Press Start 2P', monospace;
+    }
 
-    text-transform: uppercase;
-    font-size: 16px;
+    .texto-normal{
+      font-family: Arial, Helvetica, sans-serif ;
+    }
+
+    .texto-normal2{
+      font-family: Arial, Helvetica, sans-serif ;
+      font-size: 16px;
+    }
+
+
+    li{
+      font-size: 10px;
+    }
+
+    .custom-text{
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+    font-size: 17px;
     text-overflow: initial;
-    text-align: center;
     font-weight: bolder;
-  }
+    }
+  </style>
 
-</style>
+<body class="bg-white text-gray-800 ">
+  <!-- Header -->
+  <center>
+    <div class="">
+      <button id="theme-toggle" class=" p-2 rounded-md h transition flex items-center justify-center">
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="text-black h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+        </svg>
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h2m-18 0H3m15.364-6.364l1.414 1.414M4.222 19.778l1.414-1.414M19.778 19.778l-1.414-1.414M4.222 4.222l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
+        </svg>
+      </button>
+    </div>
+  </center>
 
-<body class="relative min-h-screen flex items-center justify-center bg-custom px-4">
+  <!-- Search Bar -->
+  <div class="px-6 py-2 border-b">
+    <input type="text" id="searchInput" placeholder="Search" class="border px-2 py-1 w-full max-w-md">
 
-  <!-- Campo de senha -->
-  <div class="w-full max-w-sm flex flex-col gap-4 items-center">
-    <input id="senhaInput" type="password" placeholder="password"
-      class="w-full px-4 py-2 border border-gray-300 rounded-md text-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-500">
+  </div>
+
+
+  <div class="flex flex-col md:flex-row">
+
+    <div class="md:w-1/4 border-r px-4 py-4">
+   
+      <ul class="space-y-3 text-sm">
+       
     
-    <button onclick="verificarSenha()"
-      class="custom-text bg-black text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-gray-800 transition">
-      Sign In
-    </button>
+        <li class="custom-text ml-5 underline ">
+          <a href="./mark/pagina002.html">Textos</a>
+        </li>
+   
+        <li class="custom-text inline-block ml-10 underline ">
+          <a href="./mark/pagina002.html">+Mais</a>
+        </li>
+        
+      </ul>
+    </div>
 
-    <!-- Aviso de erro -->
-    <div id="mensagemErro" class="hidden w-full text-center text-red-700 bg-red-100 border border-red-400 rounded px-3 py-2 text-xs font-semibold">
-      Senha incorreta. Tente novamente!
+    
+    <!-- Products Grid -->
+    <div class="md:w-3/4 w-full px-6 py-4 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <template id="products">
+        [1,2,3,4,5,6,7,8,9,10,11,12].map(i => `
+        <div class="product border p-2 text-center">
+          <img src="img/punpun03.gif" alt="item${i}" class="mx-auto mb-2">
+          <p class="texto-normal font-semibold text-sm">Product Title #${i}</p>
+          <p class="texto-normal text-xs text-gray-600">Description ${i}</p>
+          <p class="texto-normal text-red-600 font-semibold mt-1">₿${(Math.random() * 10 + 0.5).toFixed(2)}</p>
+        </div>`)
+      </template>
+
+      <!-- Hardcoded example products -->
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">NeoBoy</p>
+        <p class="text-xs text-gray-600">Condition</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿1.30</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">HoloRare</p>
+        <p class="text-xs text-gray-600">1st Edition</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿23.33</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Manga Vol. 1</p>
+        <p class="text-xs text-gray-600">Condition</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿12.50</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Game Boy</p>
+        <p class="text-xs text-gray-600">Includes</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿3.45</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">CRT 13</p>
+        <p class="text-xs text-gray-600">Perfect consoles</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿2.10</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Cassette</p>
+        <p class="text-xs text-gray-600">90s Mixtape Vibes</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿0.98</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Retro Mouse</p>
+        <p class="text-xs text-gray-600">Classic PS/2 Input</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿1.20</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Vinyl Album</p>
+        <p class="text-xs text-gray-600">70s Rock</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿3.99</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Joystick</p>
+        <p class="text-xs text-gray-600">USB Adapter</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿2.70</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Tamagotchi</p>
+        <p class="text-xs text-gray-600">Still Working!</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿1.75</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Alarm Clock</p>
+        <p class="text-xs text-gray-600">Loud & Reliable</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿0.88</p>
+      </div>
+      <div class="product border p-2 text-center">
+        <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
+        <p class="font-semibold text-sm">Security TV</p>
+        <p class="text-xs text-gray-600">Aesthetic Display</p>
+        <p class="texto-normal  text-red-600 font-semibold mt-1">₿2.49</p>
+      </div>
     </div>
   </div>
 
-  <!-- Ícones posicionados -->
-  <div class="absolute top-4 left-4 text-xl text-black">
-    <i class="fas fa-question-circle"></i>
-  </div>
+ 
 
-  <div class="absolute top-4 right-4 text-xl text-black/70">
-    <i class="fas fa-camera"></i>
-  </div>
-
-  <script>
-    function verificarSenha() {
-      const senhaCorreta = "1234";
-      const senhaDigitada = document.getElementById("senhaInput").value;
-      const mensagemErro = document.getElementById("mensagemErro");
-
-      if (senhaDigitada === senhaCorreta) {
-        window.location.href = "xyz.html";
-      } else {
-        mensagemErro.classList.remove("hidden");
-        mensagemErro.textContent = "Senha incorreta. Tente novamente!";
-      }
-    }
-  </script>
-
-  <!-- FontAwesome para ícones -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
+<script>
+  const button = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+  const iconSun = document.getElementById('icon-sun');
+  const iconMoon = document.getElementById('icon-moon');
+
+  button.addEventListener('click', () => {
+    html.classList.toggle('dark');
+    if (html.classList.contains('dark')) {
+      document.body.classList.add('bg-[#0a0a0a]', 'text-white');
+      document.body.classList.remove('bg-white', 'text-black');
+      iconSun.classList.remove('hidden');
+      iconMoon.classList.add('hidden');
+    } else {
+      document.body.classList.add('bg-white', 'text-black');
+      document.body.classList.remove('bg-[#0a0a0a]', 'text-white');
+      iconSun.classList.add('hidden');
+      iconMoon.classList.remove('hidden');
+    }
+  });
+</script>
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const products = document.querySelectorAll('.product');
+
+  searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    
+    products.forEach(product => {
+      const title = product.querySelector('p.font-semibold').textContent.toLowerCase();
+      const description = product.querySelector('p.text-xs').textContent.toLowerCase();
+
+      if (title.includes(searchTerm) || description.includes(searchTerm)) {
+        product.style.display = 'block';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  });
+</script>
+
 </html>
