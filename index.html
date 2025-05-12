@@ -6,48 +6,44 @@
   <title>73</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
-
 </head>
 
-  <style>
+<style>
+  * {
+    cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
+  }
 
+  body {
+    font-family: 'Press Start 2P', monospace;
+  }
 
-    *{
-  cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
-}
+  .texto-normal {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-body {
-  font-family: 'Press Start 2P', monospace;
-    }
+  .texto-normal2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
 
-    .texto-normal{
-      font-family: Arial, Helvetica, sans-serif ;
-    }
+  li {
+    font-size: 10px;
+  }
 
-    .texto-normal2{
-      font-family: Arial, Helvetica, sans-serif ;
-      font-size: 16px;
-    }
-
-
-    li{
-      font-size: 10px;
-    }
-
-    .custom-text{
-      font-family: Arial, Helvetica, sans-serif;
-      text-transform: uppercase;
+  .custom-text {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
     font-size: 17px;
     text-overflow: initial;
     font-weight: bolder;
-    }
-  </style>
+  }
+</style>
 
-<body class="bg-white text-gray-800 ">
+<body class="bg-white text-gray-800">
   <!-- Header -->
   <center>
     <div class="">
-      <button id="theme-toggle" class=" p-2 rounded-md h transition flex items-center justify-center">
+      <button id="theme-toggle" class="p-2 rounded-md h transition flex items-center justify-center">
         <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="text-black h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
         </svg>
@@ -61,121 +57,101 @@ body {
   <!-- Search Bar -->
   <div class="px-6 py-2 border-b">
     <input type="text" id="searchInput" placeholder="Search" class="border px-2 py-1 w-full max-w-md">
+  </div>
 
+  <div class="flex flex-col md:flex-row">
+    <div class="flex flex-col md:flex-row">
+  <div class="md:w-1/4 border-r border-gray-300 dark:border-transparent px-4 py-4">
+    <ul class="space-y-3 text-sm">
+      <li class="custom-text ml-5 underline">
+        <a href="./mark/pagina002.html">Textos</a>
+      </li>
+      <li class="custom-text inline-block ml-10 underline">
+        <a href="./mark/pagina002.html">+ Mais</a>
+      </li>
+    </ul>
   </div>
 
 
-  <div class="flex flex-col md:flex-row">
-
-    <div class="md:w-1/4 border-r px-4 py-4">
-   
-      <ul class="space-y-3 text-sm">
-       
-    
-        <li class="custom-text ml-5 underline ">
-          <a href="./mark/pagina002.html">Textos</a>
-        </li>
-   
-        <li class="custom-text inline-block ml-10 underline ">
-          <a href="./mark/pagina002.html">+Mais</a>
-        </li>
-        
-      </ul>
-    </div>
-
-    
     <!-- Products Grid -->
     <div class="md:w-3/4 w-full px-6 py-4 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
-      <template id="products">
-        [1,2,3,4,5,6,7,8,9,10,11,12].map(i => `
-        <div class="product border p-2 text-center">
-          <img src="img/punpun03.gif" alt="item${i}" class="mx-auto mb-2">
-          <p class="texto-normal font-semibold text-sm">Product Title #${i}</p>
-          <p class="texto-normal text-xs text-gray-600">Description ${i}</p>
-          <p class="texto-normal text-red-600 font-semibold mt-1">₿${(Math.random() * 10 + 0.5).toFixed(2)}</p>
-        </div>`)
-      </template>
-
-      <!-- Hardcoded example products -->
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">NeoBoy</p>
         <p class="text-xs text-gray-600">Condition</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿1.30</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">HoloRare</p>
         <p class="text-xs text-gray-600">1st Edition</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿23.33</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">Manga Vol. 1</p>
         <p class="text-xs text-gray-600">Condition</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿12.50</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">Game Boy</p>
         <p class="text-xs text-gray-600">Includes</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿3.45</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">CRT 13</p>
         <p class="text-xs text-gray-600">Perfect consoles</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿2.10</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">Cassette</p>
         <p class="text-xs text-gray-600">90s Mixtape Vibes</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿0.98</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">Retro Mouse</p>
         <p class="text-xs text-gray-600">Classic PS/2 Input</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿1.20</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">Vinyl Album</p>
         <p class="text-xs text-gray-600">70s Rock</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿3.99</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">Joystick</p>
         <p class="text-xs text-gray-600">USB Adapter</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿2.70</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">Tamagotchi</p>
         <p class="text-xs text-gray-600">Still Working!</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿1.75</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">Alarm Clock</p>
         <p class="text-xs text-gray-600">Loud & Reliable</p>
         <p class="texto-normal text-red-600 font-semibold mt-1">₿0.88</p>
       </div>
-      <div class="product border p-2 text-center">
+      <div class="product border border-gray-300 dark:border-transparent p-2 text-center">
         <img src="img/punpun03.gif" alt="item" class="mx-auto mb-2">
         <p class="font-semibold text-sm">Security TV</p>
         <p class="text-xs text-gray-600">Aesthetic Display</p>
-        <p class="texto-normal  text-red-600 font-semibold mt-1">₿2.49</p>
+        <p class="texto-normal text-red-600 font-semibold mt-1">₿2.49</p>
       </div>
     </div>
   </div>
-
- 
-
 </body>
+
 <script>
   const button = document.getElementById('theme-toggle');
   const html = document.documentElement;
@@ -197,13 +173,14 @@ body {
     }
   });
 </script>
+
 <script>
   const searchInput = document.getElementById('searchInput');
   const products = document.querySelectorAll('.product');
 
   searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.toLowerCase();
-    
+
     products.forEach(product => {
       const title = product.querySelector('p.font-semibold').textContent.toLowerCase();
       const description = product.querySelector('p.text-xs').textContent.toLowerCase();
