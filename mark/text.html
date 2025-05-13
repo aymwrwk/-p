@@ -1,795 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cinnamon Girl</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinnamon Girl</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Amatic+SC:wght@400;700&family=Chokokutai&family=Delius&family=Henny+Penny&family=Outfit:wght@100..900&family=Parisienne&family=Parkinsans:wght@300..800&family=Pinyon+Script&family=Quicksand:wght@300..700&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
-
-  <style>
-/* styles.css */
-
-*{
-    overflow-x: hidden; /* Remove rolagem horizontal */
-}
-
-.amarante-regular {
-  font-family: "Amarante", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-body {
-    overflow-x: hidden; /* Remove rolagem horizontal */
-    font-family: Arial, Helvetica, sans-serif;  
-font-style: italic;
-  color: #333;
-  background-color: #fef9f6;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  text-align: center;
- 
-  padding: 55px;
-  position: relative;
-}
-
-header h1 {
-    
-    margin-left: 125px;
-  font-size: 36px;
-  font-weight: normal;
-  color: #333;
-  font-style: italic;
-}
-
-
-p{
-  font-size: 16px;
-}
-
-.bunny-img {
-
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-}
-
-section {
-
-
-  padding: 5px;
-  max-width: 600px;
-  text-align: center;
-}
-
-.home {
-    
-  background-color: #fff;
-  position: absolute;
-  top: 10%;
- 
-width: 95vw;
-  margin-bottom: 40px;
-}
-
- .school {
-  
-  background-color: #fff;
-
- 
-  padding: 20px;
-  margin-bottom: 20px;
-  
-}
-
-
-.home h2, .school h2 {
-    background-color: #fef8f4;
-  padding: 15px;
-  margin: 5px 0;
- 
-    text-align: left;
-  font-size: 22px;
-  font-weight: bolder;
-  color: #333;
-  text-transform:lowercase;
-}
-
-.quote {
-
-   font-size: 20px;
-  font-style: italic;
-  color: #555;
-  margin-top: 10px;
-}
-
-.quote3 {
-margin: 5px 0px;
-font-size: 17px;
-font-style: italic;
-color: #555;
-margin-top: 10px;
-}
-
-.school-tasks {
-  list-style-type: none;
-  padding: 0;
-  margin: 10px 0;
-}
-
-.school-tasks li {
-  background-color: #fef8f4;
-  padding: 15px;
-  margin: 5px 0;
-  font-style: italic;
- 
-  font-size: 18px;
-  text-align: left;
-}
-
-.school-tasks p {
-text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-
-  font-style: italic;
- 
-  font-size: 16px;
-  text-align: left;
-}
-.bottom-image {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.background-img {
-  width: 100%;
-  max-width: 600px;
-
-}
-
-.background-img2 {
-  width: 30%;
-  max-width: 500px;
-
-}
-/*segunda*/
-
-
-.amarante-regular {
-  font-family: "Amarante", serif;
-
-}
-
-.conteudo {
- 
-  
-}
-
-.conteudomain {
- 
-  padding: 0px;
- 
-  right: 40px;
-  position: absolute;
-  width: 50%;
-  
-}
-
-.pconteudo{
-
-
-font-size: 17px;
-font-style: italic;
-color: #555;
-margin-top: 10px;
-
-}
-
-
-  
-  span{
-    color: #fcafe8;
-  }
-
-  .container {
-    border-top: 2px solid #f3d9d1;
-    border-bottom: 2px solid #f3d9d1;
-    padding: 20px;
-    width: 90%;
-    margin: auto;
-  
-  
-  }
-  
-  .container::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .header2 {
-  
-    text-align: center;
-    padding: 20px;
-  }
-  
-
-  
-  .sidebar {
-    float: left;
-    width: 100%; /* Ajuste conforme necessário */
-   
-    padding: 20px;
-    box-sizing: border-box; /* Inclui padding na largura total */
-  }
-  
-
-  
-  .links ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .links li {
-    text-align: center;
-    margin: 20px 0px;
-  }
-  
-  .links a {
-    text-decoration: underline;
-    color: #fcafe8;
-    font-weight: bold;
-  }
-  
-  .content {
-    float: right;
-    width: 75%;
-    padding: 20px;
-    background: #fff;
-  }
-  
-
-  /*terceira*/
-
-  .profile-container {
-            max-width: 700px;
-            margin: 20px auto;
-            background: #fff;
-          
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border: 5px solid #ffe6f0;
-        }
-
-        .header3 {
-            text-align: center;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #ffc0cb;
-            position: relative;
-        }
-
-        .header3 img.profile-pic {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 3px solid #ffc0cb;
-        }
-
-        .header3 img.decor {
-            position: absolute;
-            top: -20px;
-            right: 10px;
-            width: 100px;
-        }
-
-        .header3 h1 {
-            font-size: 22px;
-            color: #ff88aa;
-            margin: 10px 0;
-        }
-
-        .header3 p {
-            font-size: 12px;
-            color: #888;
-        }
-
-        .section3 {
-            margin-top: 20px;
-        }
-
-        .section-title {
-            font-size: 14px;
-            color: #ff88aa;
-            margin-bottom: 10px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .about-me, .discord-info, .game-info {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.6;
-            background: #fff0f5;
-            padding: 25px;
-            border-radius: 10px;
-            border: 1px dashed #ffc0cb;
-        }
-
-        .game-info {
-            display: flex;
-            align-items: center;
-        }
-
-       
-
-        .cta-button {    
-            text-transform: uppercase;
-            display: block;
-            text-align: center;
-            margin-top: 20px;
-            padding: 12px;      
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 1s;
-        }
-
-        .cta-button:hover {
-
-            transform: translateY(-2px);
-            
-        }
-
-        .divider3 {
-            border: 0;
-            height: 1px;
-            background: #ffc0cb;
-            margin: 15px 0;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
- .school2 {
-  box-shadow: 10 4px 1px rgba(0, 0, 0, 0.075);
-  background-color: #fff;
-  border-top: 20px solid #FEF9F6;
-  border-bottom: 20px solid #FEF9F6;
- 
-  padding: 20px;
-  margin-bottom: 20px;
-  
-}
-
-
- .school2 h2 {
-    background-color: #FEF9F6;
-  padding: 15px;
-  margin: 5px 0;
- 
-    text-align: left;
-  font-size: 22px;
-  font-weight: bolder;
-  color: #333;
-  text-transform:lowercase;
-}
-
-.quote2 {
-   
-  font-style: italic;
-  color: #555;
-  margin-top: 10px;
-}
-
-.school-tasks2 {
-  list-style-type: none;
-  padding: 0;
-  margin: 10px 0;
-}
-
-.school-tasks2 li {
- 
- 
-font-size: 17px;
-font-style: italic;
-color: #555;
-margin-top: 10px;
-}
-
-
-.container7 {
-      height: 70vh;
-      display: flex;
-      flex-direction: row;
-      background-color: #fff;
-      box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.041);
-      overflow: hidden;
-      max-width: 900px;
-      width: 100%;
-    }
-
-
-    .text-section7 {
-      flex: 1;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-     
-    }
-
-  .text-section7 > video{
-
-  }
-
-    .text-section7 p {
-      font-size: 17px;
-      color: #333;
-    }
-
-.background-pink{
-  background-color: #ffe6f048;
-  padding: 20px;
-}
-    
-
-
-
-
-
-      
-.school3 {
-  box-shadow: 10 4px 1px rgba(0, 0, 0, 0.075);
-  background-color: black;
-  border-top: 50px solid #FEF9F6;
-  border-bottom: 20px solid #FEF9F6;
- color: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  
-}
-
-
- .school3 h2 {
-    background-color: #FEF9F6;
-  padding: 15px;
-  margin: 5px 0;
- 
-    text-align: left;
-  font-size: 22px;
-  font-weight: bolder;
-  color: #333;
-  text-transform:lowercase;
-}
-
-.quote3 {
-   
-  font-size: 1.7em;
-  color: #FEF9F6;
-  margin-top: 10px;
-}
-
-.school-tasks3 {
-  list-style-type: none;
-  padding: 0;
-  margin: 10px 0;
-}
-
-.school-tasks3 li {
- 
- 
-  font-size: 1.7em;
-  color: #FEF9F6;
-margin-top: 10px;
-}
-
-
-texto-normal {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .texto-normal2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-  }
-
-  li {
-    font-size: 10px;
-  }
-
-  .custom-text {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 17px;
-    text-overflow: initial;
-    font-weight: bolder;
-  }
-
-  </style>
-
-</head>
-<body>
- 
-  
-
-  
-  <div class="px-6 py-3 border-b">
-    <input type="text" id="searchInput" placeholder="Search" class="border px-2 py-1 w-full max-w-md">
-  </div>
-
-  <div class="flex flex-col md:flex-row">
-    <div class="flex flex-col md:flex-row">
-      <div class="md:w-1/4 border-r border-gray-300 dark:border-transparent px-4 py-4">
-        <ul class="flex flex-row md:flex-col items-center justify-center md:items-start md:justify-start gap-12 text-sm">
-          <li class="custom-text underline">
-            <a href="../index.html">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#E9D5FF"><path d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"/></svg>
-            </a>
-          </li>
-          <li class="custom-text underline">
-            <a href="./text.html">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#E9D5FF"><path d="M160-406.67v-66.66h293.33v66.66H160ZM160-570v-66.67h460V-570H160Zm0-163.33V-800h460v66.67H160ZM520-160v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8.67 9 12.83 20 4.17 11 4.17 22t-4.33 22.5q-4.34 11.5-13.28 20.5L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"/></svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      
-      
-    </div>
-  </div>
-
-
-  <!-- Seção Home -->
-  
-
-  <!-- Seção School -->
-  <section class="school">
-   
-
-    <center><img src="../img/coelho.jpg" alt="Soft Fabric" class="background-img2"></center>
-    <ul class="school-tasks">
-      <p> ⋆˚࿔ ✧ Você eh mais do que uma namorada, você eh minha melhor amiga, um lugar que posso ser eu mesmo, você eh um pedaço de mim.
-      </p>
-      <li>ㅤO seu jeito, a maneira que você me trata, eh tão perfeito que eu não poderia exigir melhor de você, parece que você eh a garota perfeita pra mim, sabe? ⋆˚࿔</li>
-   
-    </ul>
-  </section>
-
-  <!-- Imagem inferior -->
-  <section class="bottom-image">
-    <img src="gif/gif3.gif" alt="Soft Fabric" class="background-img">
-
-  </section>
-
-
-  <section class="school">
-    <h2>🎀</h2>
-    <p class="quote3"> Você não sabe o quanto eu sonho em poder te tocar, te beijar, já perdi as contas de quanto tempo passei pensando na gente juntos. °✧</p>
-    <ul class="school-tasks">
-      <li> 
-        Eu sou muito feliz com você, gosto quando você me ouve, tenta me entender, e sempre sabe a melhor forma de explicar as coisas pra mim que eu possa entender melhor.
-<br>
-
- 
-      </li>
-     
-      <p>Quando eu te vejo: 🫦🫦</p>
-    </ul>
-  </section>
-
-
-  <div class="profile-container">
-    
-
-    <hr class="divider3">
-   
-    <ul class="school-tasks2">
-      <img src="img/hellokitty3.gif" alt="Soft Fabric" class="background-img">
-      <li>
-        Talvez seja muito fácil só dizer um "eu te amo" mas você não diz só isso, sempre ta demonstrando que me ama, que sente amor por mim, isso que é importante em um relacionamento. 
-        Espero que eu tambem demostre meus sentimentos de uma forma em que você enxergue que eu te amo.
-      </li>
-      <br>
-   <p><span>(˶˃⤙˂˶)</span></p>
-    
-      
-
-    </ul>
-
-
-    <div class="section3">
-      <br>
-      
-        <div class="background-pink">
-          Você sabe que eu tenho muito medo de te perder, e você tem que entender meu lado, um garoto feio burro e inútil namorando alguém incrível como você. Na maioria das vezes eu fico muito feliz em te ter comigo, em outras horas eu fico triste pensando se realmente te mereço, sabe?</div>
-        <br>
-        <br>
-    </div>
-</div>
-
-  <div class="container">
-    <header class="header2">
-    
-     
-    </header>
-    <aside class="sidebar">
-      <div class="love-message">
-     
-        <div class="conteudo">
-          <p class="pconteudo">
-            Dediquei duas músicas para você, ambas eu gosto muito e sempre que ouço fico com um sentimento bom porque me lembram você
-          </p>
-      
-         
-        </div>
-    
-      </div>
-
-
-      <nav class="links">
-        <ul>
-          <li><a href="https://youtu.be/niUDtr9m4uU?si=_bYnE0f_1KemRNnD"><span>Alex G - Mis</span></a></li>
-          <li><a href="https://youtu.be/3JiMr-HgHJ8?si=uXgM1oPBriHC8I65"><span>Aliança - Tribalistas</span></a></li>
-        
-        </ul>
-      </nav>
-    </aside>
-<div class="conteudomain">
-  
-      
-</div>
-  </div>
-
-
-
-  <!-- Imagem inferior -->
-  <section class="bottom-image">
-    <img src="gif/gif2.gif" alt="Soft Fabric" class="background-img">
-
-  </section>
-  <div class="profile-container">
-    
-
-    <hr class="divider3">
-    <img src="img/coelho3.jpg" alt="Soft Fabric" class="background-img2">
-    <ul class="school-tasks2">
-   
-      <li>
-      Você cuidar de mim, que sou um garoto muito inseguro, que as vezes precisa de você pra desabafar, me faz ter muita dependência em você. Me desculpa por fazer você ter que dar tanta atenção pra mim, por sempre ter que me ajudar com tudo, talvez se eu fosse normal, o namoro seria muito mais feliz por parte sua.
-      </li>
-   
-    </ul>
- 
-
-    <div class="section3">
-      <br>
-        <div class="section-title">04 de Novembro de 2024</div>
-        <div class="">A data em que tudo isso começou, não me arrependo de nada até aqui. <br> <br>Tudo que eu senti e falei pra você foi verdadeiro.</div>
-        <br>
-        <br>
-    </div>
-</div>
-
-
-
-
-<div class="container7">
-    <video src="" controls></video>
- 
-  </div>
-
-  <div class="profile-container">
-    
-
-    <hr class="divider3">
-   
-    <ul class="school-tasks2">
-   
-      <li>
-        Sua companhia sempre me deixa muito feliz, nem que seja por apenas alguns minutos te ouvindo. Eu gosto muito de te ouvir tagarelar, falar de assuntos que você gosta mesmo que eu não esteja entendendo nadinha.
-      </li>
-   <p>(˶˃⤙˂˶)</p>
-      <li>
-        Eu penso em você em qualquer lugar, em qualquer hora, eu sonho com você quase todas as noites. Você é uma pessoa muito incrível, saiba que você é insubstituível, sou grato por ter te conhecido e por cada momento que passo com você.
-      </li>
-   
-      
-
-    </ul>
-    <img src="img/maosdadas.jpg" alt="Soft Fabric" class="background-img2">
-
-    <div class="section3">
-      <br>
-        <div class="section-title"><3</div>
-        <div class="">
-          Desejo que esse aniversário de 2 meses seja apenas o começo de tudo isso. Pode ter certeza que por minha parte, eu não enjoei de você e nem estou parando de gostar de você, pelo contrário, eu te amo mtmt mais do que antes.</div>
-        <br>
-        <br>
-    </div>
-</div>
-
-<section class="school2">
-  <p class="quote2">
-   °✧ É impossível ter alguém que me faça feliz do jeito que você faz, você é única.</p>
-  <ul class="school-tasks2">
-   
-    <li>Eu sou apaixonado no seu cabelo, ele eh diferente pra mim, sempre que você me mostra ele eu fico muito sorridente, quero muito um dia poder tocar no seu cabelo e sentir ele. Eu amo seus sorriso, ele foi a primeira coisa que notei quanto vi você. °✧</li>
- 
-  </ul>
-</section>
-
-
-
-
-
-<a href="#" class="cta-button"><img src="gif/text.gif" alt="" width="280px"></a>
-  <section class="bottom-image">
-
-
-  </section>
-
-  <script>
-  const button = document.getElementById('theme-toggle');
-  const html = document.documentElement;
-  const iconSun = document.getElementById('icon-sun');
-  const iconMoon = document.getElementById('icon-moon');
-
-  button.addEventListener('click', () => {
-    html.classList.toggle('dark');
-    if (html.classList.contains('dark')) {
-      document.body.classList.add('bg-[#0a0a0a]', 'text-white');
-      document.body.classList.remove('bg-white', 'text-black');
-      iconSun.classList.remove('hidden');
-      iconMoon.classList.add('hidden');
-    } else {
-      document.body.classList.add('bg-white', 'text-black');
-      document.body.classList.remove('bg-[#0a0a0a]', 'text-white');
-      iconSun.classList.add('hidden');
-      iconMoon.classList.remove('hidden');
-    }
-  });
-</script>
-
-<script>
-  const searchInput = document.getElementById('searchInput');
-  const products = document.querySelectorAll('.product');
-
-  searchInput.addEventListener('input', () => {
-    const searchTerm = searchInput.value.toLowerCase();
-
-    products.forEach(product => {
-      const title = product.querySelector('p.font-semibold').textContent.toLowerCase();
-      const description = product.querySelector('p.text-xs').textContent.toLowerCase();
-
-      if (title.includes(searchTerm) || description.includes(searchTerm)) {
-        product.style.display = 'block';
-      } else {
-        product.style.display = 'none';
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amarante&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
       }
-    });
-  });
-</script>
-</body>
+      .amarante {
+        font-family: 'Amarante', serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#fef9f6] text-[#333] overflow-x-hidden">
+    
+
+    <div class="flex items-center justify-center flex-col md:flex-row">
+      <div class="md:w-2/4  px-1 py-0 mt-4 mb-4">
+        <ul
+          class="flex flex-row md:flex-col items-center md:items-start gap-7 text-sm"
+        >
+          <li class="underline uppercase font-bold text-[19px] p-2">
+            <a href="../index.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="36"
+                viewBox="0 -960 960 960"
+                width="40"
+                fill="#00000"
+              >
+                <path
+                  d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="underline uppercase font-bold text-[25px] mt-2">
+            <a href="./text.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40"
+                viewBox="0 -960 960 960"
+                width="40"
+                fill="#00000"
+              >
+                <path
+                  d="M160-406.67v-66.66h293.33v66.66H160ZM160-570v-66.67h460V-570H160Zm0-163.33V-800h460v66.67H160ZM520-160v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8.67 9 12.83 20 4.17 11 4.17 22t-4.33 22.5q-4.34 11.5-13.28 20.5L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="searchable-content">
+      
+       <div class="bg-white max-w-2xl mx-auto p-6 border-4 border-pink-100 shadow">
+        <hr class="border-pink-300 my-4" />
+        <ul class="list-none">
+              <img
+          src="../img/coelho1.jpg"
+          alt="Soft Fabric"
+          class="mx-auto w-1/3"
+        />
+          <li class="text-[17px] italic text-[#555] mt-4">
+         ⋆˚࿔ ✧ Você eh mais do que uma namorada, você eh minha melhor amiga,
+            um lugar que posso ser eu mesmo, você eh um pedaço de mim.
+          </li>
+        </ul>
+        
+
+        <div class="bg-pink-100/30 mt-6 p-4 rounded">
+        
+ㅤO seu jeito, a maneira que você me trata, eh tão perfeito que eu
+            não poderia exigir melhor de você, parece que você eh a garota
+            perfeita pra mim, sabe? ⋆˚࿔
+        </div>
+      </div>
+
+
+      <section class="bg-white max-w-2xl mx-auto p-6 my-4">
+        
+        <p class="italic text-[17px] text-[#555] mt-2">
+          Você não sabe o quanto eu sonho em poder te tocar, te beijar, já perdi
+          as contas de quanto tempo passei pensando na gente juntos. °✧
+        </p>
+        <ul class="list-none mt-4">
+          <li class="bg-pink-100/30 mt-6 p-4 rounded">
+            Eu sou muito feliz com você, gosto quando você me ouve, tenta me
+            entender, e sempre sabe a melhor forma de explicar as coisas pra mim
+            que eu possa entender melhor.
+          </li>
+    
+        </ul>
+      </section>
+
+      <div class="bg-white max-w-2xl mx-auto p-6 border-4 border-pink-100 shadow">
+        <hr class="border-pink-300 my-4" />
+        <ul class="list-none">
+          <img src="../img/transferir.gif" alt="Soft Fabric" class="w-full" />
+          <li class="text-[17px] italic text-[#555] mt-4">
+            Talvez seja muito fácil só dizer um "eu te amo" mas você não diz só
+            isso, sempre ta demonstrando que me ama, que sente amor por mim, isso
+            que é importante em um relacionamento. Espero que eu tambem demostre
+            meus sentimentos de uma forma em que você enxergue que eu te amo.
+          </li>
+        </ul>
+        <p class="text-pink-300 mt-2 text-center">(˶˃⤙˂˶)</p>
+
+        <div class="bg-pink-100/30 mt-6 p-4 rounded">
+          Você sabe que eu tenho muito medo de te perder, e você tem que entender
+          meu lado, um garoto feio burro e inútil namorando alguém incrível como
+          você. Na maioria das vezes eu fico muito feliz em te ter comigo, em
+          outras horas eu fico triste pensando se realmente te mereço, sabe?
+        </div>
+      </div>
+
+      <div class="border-y-2 border-[#f3d9d1] w-[90%] mx-auto py-6">
+        <p class="italic text-[17px] text-[#555]">
+          Dediquei duas músicas para você, ambas eu gosto muito e sempre que
+          ouço fico com um sentimento bom porque me lembram você
+        </p>
+        <nav class="mt-6">
+          <ul class="list-none text-center space-y-4">
+            <li>
+              <a
+                href="https://youtu.be/niUDtr9m4uU?si=_bYnE0f_1KemRNnD"
+                class="text-[#fcafe8] font-bold underline"
+                ><span>Alex G - Mis</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://youtu.be/3JiMr-HgHJ8?si=uXgM1oPBriHC8I65"
+                class="text-[#fcafe8] font-bold underline"
+                ><span>Alvvays - Dreams Tonite</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bg-white max-w-2xl mx-auto p-6 border-4 border-pink-100 shadow">
+        <hr class="border-pink-300 my-4" />
+        <ul class="list-none">
+          <section class="text-center my-4">
+        <img src="../img/Sword Art Online.gif" alt="Soft Fabric" class="w-full max-w-xl mx-auto" />
+      </section>
+          <li class="text-[17px] italic text-[#555] mt-4">
+           Você cuidar de mim, que sou um garoto muito inseguro, que as vezes precisa de você pra desabafar, me faz ter muita dependência em você. Me desculpa por fazer você ter que dar tanta atenção pra mim, por sempre ter que me ajudar com tudo, talvez se eu fosse normal, o namoro seria muito mais feliz por parte sua.
+          </li>
+        </ul>
+        <p class="text-pink-300 mt-2 text-center">mwa</p>
+
+        <div class="bg-pink-100/30 mt-6 p-4 rounded">
+         A data em que tudo isso começou, não me arrependo de nada até aqui.
+<br>
+Tudo que eu senti e falei pra você foi verdadeiro.
+        </div>
+      </div>
+
+      <section class="bg-white max-w-2xl mx-auto p-6 my-4">
+        <h2 class="bg-[#fef8f4] text-left  text-[16px] p-4 ">
+         Sua companhia sempre me deixa muito feliz, nem que seja por apenas alguns minutos te ouvindo. Eu gosto muito de te ouvir tagarelar, falar de assuntos que você gosta mesmo que eu não esteja entendendo nadinha.
+(˶˃⤙˂˶)
+        </h2>
+        <br>
+        <p class="italic text-[17px] text-[#555] mt-2">
+         Eu penso em você em qualquer lugar, em qualquer hora, eu sonho com você quase todas as noites. Você é uma pessoa muito incrível, saiba que você é insubstituível, sou grato por ter te conhecido e por cada momento que passo com você.
+        </p>
+        <br>
+         <p class="bg-[#fef8f4] text-left  text-[16px] p-4">
+        Desejo que esse aniversário de 2 meses seja apenas o começo de tudo isso. Pode ter certeza que por minha parte, eu não enjoei de você e nem estou parando de gostar de você, pelo contrário, eu te amo mtmt mais do que antes.
+        </p>
+        
+      </section>
+
+    </div>
+  </body>
 </html>
