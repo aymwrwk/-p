@@ -154,7 +154,7 @@
 
       <!-- Botão para voltar ao topo -->
       <button id="backToTop" onclick="scrollToTop()" 
-        class="fixed bottom-6 right-6 bg-yellow font-bold py-2 px-4 rounded-full shadow-lg transition-opacity duration-300 opacity-0">
+        class="bg-pink-100 opacity-80 fixed bottom-6 right-6 font-bold py-2 px-4 rounded-full shadow-lg  ">
         Subir ao Topo
       </button>
 
@@ -164,7 +164,7 @@
       // Mostrar/ocultar botão "Subir ao Topo"
       const backToTopButton = document.getElementById("backToTop");
       window.addEventListener("scroll", () => {
-        backToTopButton.classList.toggle("opacity-100", window.scrollY > 300);
+        backToTopButton.classList.toggle("60", window.scrollY > 300);
       });
       function scrollToTop() {
         window.scrollTo({ top: 0, behavior: "smooth" });
