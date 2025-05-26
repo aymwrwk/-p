@@ -3,52 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>73</title>
+  <title>Galeria com Swipe</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
-    * {
-      cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
-    }
-    body {
-      font-family: 'Press Start 2P', monospace;
-    }
-    .texto-normal {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    .texto-normal2 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-    }
-    li {
-      font-size: 10px;
-    }
-    .custom-text {
-      font-family: Arial, Helvetica, sans-serif;
-      text-transform: uppercase;
-      font-size: 17px;
-      font-weight: bolder;
-    }
+    * { cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto; }
+    body { font-family: 'Press Start 2P', monospace; }
+    .custom-text { font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; font-size: 17px; font-weight: bolder; }
   </style>
 </head>
-<body class="bg-[#0a0a0a] text-white transition-colors duration-300 mt-2 p-3">
+<body class="bg-[#0a0a0a] text-white transition-colors duration-300 p-4">
 
- <!-- Header -->
-  <center>
-    
-    <div class="">
-      
-      <button id="theme-toggle" class=" p-2 rounded-md h transition flex items-center justify-center">
-        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="text-black h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
-        </svg>
-        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h2m-18 0H3m15.364-6.364l1.414 1.414M4.222 19.778l1.414-1.414M19.778 19.778l-1.414-1.414M4.222 4.222l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
-        </svg>
-      </button>
-    </div>
-  </center>
+  
 
+  <!-- Toggle de tema -->
+  <div class="text-center mb-6">
+    <button id="theme-toggle" class="p-2 rounded-md transition">
+      <svg id="icon-moon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+      </svg>
+      <svg id="icon-sun" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 3v2m0 14v2m9-9h2m-18 0H3m15.364-6.364l1.414 1.414M4.222 19.778l1.414-1.414M19.778 19.778l-1.414-1.414M4.222 4.222l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+      </svg>
+    </button>
+  </div>
   <!-- Sidebar Navigation -->
   <div class="flex flex-col md:flex-row">
     <div class="flex flex-col md:flex-row">
@@ -71,82 +51,101 @@
 
       
   </div>
-
   <!-- Galeria Horizontal -->
-  <div class="mt-8 max-w-full overflow-x-auto">
-    <div class="flex space-x-4 px-4 py-2">
-      <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/kiara2.jpg" alt="Foto 1" class="gallery-img w-64 h-80 object-cover cursor-pointer">
-      </div>
-      <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/kiara4.jpg" alt="Foto 2" class="gallery-img w-64 h-80 object-cover cursor-pointer">
-      </div>
-        <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/texto02.webp" alt="Foto 4" class="gallery-img w-64 h-80 object-cover cursor-pointer">
-      </div>
-      <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/kiara1.jpg" alt="Foto 3" class="gallery-img w-64 h-80 object-cover cursor-pointer">
-      </div>
-      <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/kiara3.jpg" alt="Foto 4" class="gallery-img w-64 h-80 object-cover cursor-pointer">
-      </div>
-       <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/texto01.webp" alt="Foto 4" class="gallery-img w-64 h-80 object-cover cursor-pointer">
-      </div>
-       <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/texto04.jpg" alt="Foto 4" class="gallery-img w-64 h-80 object-cover cursor-pointer">
-      </div>
-     
-    
-      <!-- adicione mais conforme precisar -->
+  <div class="overflow-x-auto">
+    <div class="flex space-x-4 px-2 py-4">
+      <!-- Miniaturas -->
+      <img src="../img/kiara2.jpg" class="gallery-img w-64 h-80 object-cover rounded-xl shadow-lg cursor-pointer">
+      <img src="../img/kiara4.jpg" class="gallery-img w-64 h-80 object-cover rounded-xl shadow-lg cursor-pointer">
+      <img src="../img/texto02.webp" class="gallery-img w-64 h-80 object-cover rounded-xl shadow-lg cursor-pointer">
+      <img src="../img/kiara1.jpg" class="gallery-img w-64 h-80 object-cover rounded-xl shadow-lg cursor-pointer">
+      <img src="../img/kiara3.jpg" class="gallery-img w-64 h-80 object-cover rounded-xl shadow-lg cursor-pointer">
+      <img src="../img/texto01.webp" class="gallery-img w-64 h-80 object-cover rounded-xl shadow-lg cursor-pointer">
+      <img src="../img/texto04.jpg" class="gallery-img w-64 h-80 object-cover rounded-xl shadow-lg cursor-pointer">
     </div>
   </div>
 
-  <!-- Lightbox Overlay (ajustado para ocupar 100% da tela) -->
+  <!-- Lightbox com setas -->
   <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center p-0 hidden z-50">
-    <img id="lightbox-img" src="" alt="Foto em tela cheia" class="max-h-screen max-w-screen rounded-none shadow-none">
+    <!-- Botão anterior -->
+    <button id="prev-btn" class="absolute left-4 text-white text-4xl select-none">&larr;</button>
+    <!-- Imagem -->
+    <img id="lightbox-img" src="" class="max-h-screen max-w-screen rounded-none">
+    <!-- Botão próximo -->
+    <button id="next-btn" class="absolute right-4 text-white text-4xl select-none">&rarr;</button>
   </div>
 
-  <!-- Scripts -->
   <script>
-    // Tema Dark/Light
+    // Toggle tema
     const btn = document.getElementById('theme-toggle');
     const html = document.documentElement;
     const iconSun = document.getElementById('icon-sun');
     const iconMoon = document.getElementById('icon-moon');
-
     btn.addEventListener('click', () => {
       html.classList.toggle('dark');
       if (html.classList.contains('dark')) {
-        document.body.classList.replace('bg-white', 'bg-[#0a0a0a]');
-        document.body.classList.replace('text-black', 'text-white');
+        document.body.classList.replace('bg-white','bg-[#0a0a0a]');
+        document.body.classList.replace('text-black','text-white');
         iconSun.classList.remove('hidden');
         iconMoon.classList.add('hidden');
       } else {
-        document.body.classList.replace('bg-[#0a0a0a]', 'bg-white');
-        document.body.classList.replace('text-white', 'text-black');
+        document.body.classList.replace('bg-[#0a0a0a]','bg-white');
+        document.body.classList.replace('text-white','text-black');
         iconSun.classList.add('hidden');
         iconMoon.classList.remove('hidden');
       }
     });
 
-    // Lightbox de Imagens
-    const lightbox   = document.getElementById('lightbox');
-    const lightboxImg= document.getElementById('lightbox-img');
-    const thumbs     = document.querySelectorAll('.gallery-img');
+    // Lightbox com swipe e setas
+    const thumbs       = Array.from(document.querySelectorAll('.gallery-img'));
+    const lightbox     = document.getElementById('lightbox');
+    const lightboxImg  = document.getElementById('lightbox-img');
+    const prevBtn      = document.getElementById('prev-btn');
+    const nextBtn      = document.getElementById('next-btn');
+    let currentIndex  = 0;
 
-    thumbs.forEach(img => {
-      img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightbox.classList.remove('hidden');
-      });
+    function showLightbox(idx) {
+      currentIndex = idx;
+      lightboxImg.src = thumbs[idx].src;
+      lightbox.classList.remove('hidden');
+    }
+    function hideLightbox() {
+      lightbox.classList.add('hidden');
+      lightboxImg.src = '';
+    }
+    function prevImage() {
+      showLightbox((currentIndex - 1 + thumbs.length) % thumbs.length);
+    }
+    function nextImage() {
+      showLightbox((currentIndex + 1) % thumbs.length);
+    }
+
+    thumbs.forEach((img, i) => {
+      img.addEventListener('click', () => showLightbox(i));
     });
-
+    // fechar ao clicar no backdrop
     lightbox.addEventListener('click', e => {
-      if (e.target === lightbox) {
-        lightbox.classList.add('hidden');
-        lightboxImg.src = '';
-      }
+      if (e.target === lightbox) hideLightbox();
+    });
+    // setas
+    prevBtn.addEventListener('click', e => { e.stopPropagation(); prevImage(); });
+    nextBtn.addEventListener('click', e => { e.stopPropagation(); nextImage(); });
+    // teclas
+    document.addEventListener('keydown', e => {
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'ArrowRight') nextImage();
+      if (e.key === 'Escape') hideLightbox();
+    });
+    // swipe touch
+    let startX = 0;
+    lightboxImg.addEventListener('touchstart', e => {
+      startX = e.changedTouches[0].clientX;
+    });
+    lightboxImg.addEventListener('touchend', e => {
+      const endX = e.changedTouches[0].clientX;
+      if (endX + 50 < startX) nextImage();    // swipe left → next
+      if (endX - 50 > startX) prevImage();    // swipe right → prev
     });
   </script>
 
