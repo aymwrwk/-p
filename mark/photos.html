@@ -2,51 +2,43 @@
 <html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>73</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    * {
+      cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
+    }
+    body {
+      font-family: 'Press Start 2P', monospace;
+    }
+    .texto-normal {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .texto-normal2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+    li {
+      font-size: 10px;
+    }
+    .custom-text {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-weight: bolder;
+    }
+  </style>
 </head>
+<body class="bg-[#0a0a0a] text-white transition-colors duration-300">
 
-<style>
-  * {
-    cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur839.cur'), auto;
-  }
-
-  body {
-    font-family: 'Press Start 2P', monospace;
-  }
-
-  .texto-normal {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .texto-normal2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-  }
-
-  li {
-    font-size: 10px;
-  }
-
-  .custom-text {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 17px;
-    text-overflow: initial;
-    font-weight: bolder;
-  }
-</style>
-
-<body class="bg-[#0a0a0a] text-white">
-   
-  <!-- Header -->
+ <!-- Header -->
   <center>
-     
-    <div>
-      <br>
-      <button id="theme-toggle" class=" mt-2 p-2 rounded-md h transition flex items-center justify-center">
+    
+    <div class="">
+      
+      <button id="theme-toggle" class=" p-2 rounded-md h transition flex items-center justify-center">
         <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="text-black h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
         </svg>
@@ -57,74 +49,92 @@
     </div>
   </center>
 
+  <!-- Sidebar Navigation -->
   <div class="flex flex-col md:flex-row">
     <div class="flex flex-col md:flex-row">
       <div class="md:w-1/4 border-r border-gray-300 dark:border-transparent px-4 py-4">
         <ul class="flex flex-row md:flex-col items-center justify-center md:items-start md:justify-start gap-12 text-sm">
           <li class="custom-text underline">
             <a href="../index.html">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#E9D5FF"><path d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#E9D5FF">
+                    <path d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"/>
+                  </svg>
             </a>
           </li>
-          <li class="custom-text underline ">
-            <a href="./text.html">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#E9D5FF"><path d="M319.33-246.67h321.34v-66.66H319.33v66.66Zm0-166.66h321.34V-480H319.33v66.67ZM226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-666.66q0-27 19.83-46.84Q199.67-880 226.67-880H574l226 226v507.33q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm314-542.67v-190.66h-314v666.66h506.66v-476H540.67Zm-314-190.66v190.66-190.66 666.66-666.66Z"/></svg>
+          <li class="custom-text underline">
+            <a href="./mark/photos.html">
+             <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#E9D5FF"><path d="M319.33-246.67h321.34v-66.66H319.33v66.66Zm0-166.66h321.34V-480H319.33v66.67ZM226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-666.66q0-27 19.83-46.84Q199.67-880 226.67-880H574l226 226v507.33q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm314-542.67v-190.66h-314v666.66h506.66v-476H540.67Zm-314-190.66v190.66-190.66 666.66-666.66Z"/></svg>
             </a>
           </li>
         </ul>
       </div>
-    </div>
+
+      
   </div>
 
-  <!-- Galeria que se move horizontalmente -->
+  <!-- Galeria Horizontal -->
   <div class="mt-8 max-w-full overflow-x-auto">
-    <div class="flex flex-nowrap space-x-4 px-4 py-2">
+    <div class="flex space-x-4 px-4 py-2">
       <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/kiara2.jpg" alt="Foto 1" class="w-64 h-80 object-cover">
+        <img src="../img/kiara2.jpg" alt="Foto 1" class="gallery-img w-64 h-80 object-cover cursor-pointer">
       </div>
       <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/kiara4.jpg" alt="Foto 2" class="w-64 h-80 object-cover">
+        <img src="../img/kiara4.jpg" alt="Foto 2" class="gallery-img w-64 h-80 object-cover cursor-pointer">
       </div>
       <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/kiara1.jpg" alt="Foto 3" class="w-64 h-80 object-cover">
+        <img src="../img/kiara1.jpg" alt="Foto 3" class="gallery-img w-64 h-80 object-cover cursor-pointer">
       </div>
       <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/kiara3.jpg" alt="Foto 4" class="w-64 h-80 object-cover">
+        <img src="../img/kiara3.jpg" alt="Foto 4" class="gallery-img w-64 h-80 object-cover cursor-pointer">
       </div>
-      <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/" alt="Foto 5" class="w-64 h-80 object-cover">
-      </div>
-      <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/" alt="Foto 6" class="w-64 h-80 object-cover">
-      </div>
-      <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/" alt="Foto 7" class="w-64 h-80 object-cover">
-      </div>
-      <div class="w-64 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
-        <img src="../img/" alt="Foto 8" class="w-64 h-80 object-cover">
-      </div>
+      <!-- adicione mais conforme precisar -->
     </div>
   </div>
 
+  <!-- Lightbox Overlay (ajustado para ocupar 100% da tela) -->
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center p-0 hidden z-50">
+    <img id="lightbox-img" src="" alt="Foto em tela cheia" class="max-h-screen max-w-screen rounded-none shadow-none">
+  </div>
 
+  <!-- Scripts -->
   <script>
-    const button = document.getElementById('theme-toggle');
+    // Tema Dark/Light
+    const btn = document.getElementById('theme-toggle');
     const html = document.documentElement;
     const iconSun = document.getElementById('icon-sun');
     const iconMoon = document.getElementById('icon-moon');
 
-    button.addEventListener('click', () => {
+    btn.addEventListener('click', () => {
       html.classList.toggle('dark');
       if (html.classList.contains('dark')) {
-        document.body.classList.add('bg-[#0a0a0a]', 'text-white');
-        document.body.classList.remove('bg-white', 'text-black');
+        document.body.classList.replace('bg-white', 'bg-[#0a0a0a]');
+        document.body.classList.replace('text-black', 'text-white');
         iconSun.classList.remove('hidden');
         iconMoon.classList.add('hidden');
       } else {
-        document.body.classList.add('bg-white', 'text-black');
-        document.body.classList.remove('bg-[#0a0a0a]', 'text-white');
+        document.body.classList.replace('bg-[#0a0a0a]', 'bg-white');
+        document.body.classList.replace('text-white', 'text-black');
         iconSun.classList.add('hidden');
         iconMoon.classList.remove('hidden');
+      }
+    });
+
+    // Lightbox de Imagens
+    const lightbox   = document.getElementById('lightbox');
+    const lightboxImg= document.getElementById('lightbox-img');
+    const thumbs     = document.querySelectorAll('.gallery-img');
+
+    thumbs.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.remove('hidden');
+      });
+    });
+
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) {
+        lightbox.classList.add('hidden');
+        lightboxImg.src = '';
       }
     });
   </script>
