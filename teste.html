@@ -1,98 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dean's Space</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil - Layout Pastel</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .bg-custom1{
-      background-image: url('./img/fotofoto.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
+    /* Paleta personalizada */
+    .bg-pastel { background-color: #f0e6e9; }
+    .border-pastel { border-color: #e8d4d8; }
+    .text-pastel-dark { color: #b08b99; }
   </style>
 </head>
-<body class="bg-pink-50 text-black transition-colors" id="body">
-
-<div class="max-w-sm mx-auto rounded-3xl p-4">
-
-
-    <!-- Header -->
-    <header class="text-center mb-4">
-     
-        <div>
-          <button id="theme-toggle" class="p-2 rounded-md transition">
-            <!-- Moon icon (Dark mode) -->
-            <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
-            </svg>
-            <!-- Sun icon (Light mode) -->
-            <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 3v2m0 14v2m9-9h2m-18 0H3m15.364-6.364l1.414 1.414M4.222 19.778l1.414-1.414M19.778 19.778l-1.414-1.414M4.222 4.222l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
-            </svg>
-          </button>
-        </div>
-      
+<body class="min-h-screen bg-pastel font-sans text-pastel-dark">
+  <div class="max-w-3xl mx-auto p-4 space-y-4">
+    <!-- header -->
+    <header class="flex items-center justify-between bg-white bg-opacity-50 rounded-xl px-4 py-2">
+      <div class="space-y-1">
+        <div class="w-6 h-0.5 bg-pastel-dark"></div>
+        <div class="w-6 h-0.5 bg-pastel-dark"></div>
+        <div class="w-6 h-0.5 bg-pastel-dark"></div>
+      </div>
+      <div class="text-sm lowercase">playing … moonlight sunrise by twice</div>
+      <div class="w-6"></div>
     </header>
 
-
-  <!-- Conteúdo do site (igual ao anterior) -->
-   <div class="flex items-center bg-pink-100 l px-3 py-2 mb-4 border border-pink-300">
-    <input 
-      type="text" 
-      class="flex-1 bg-transparent text-pink-700 text-sm focus:outline-none" 
-      value="" 
-      readonly>
-
-  </div>
-
-    <div class="flex flex-col md:flex-row">
-      <div class="md:w-1/4 border-r border-gray-300 dark:border-transparent px-4 py-4">
-        <ul class="flex flex-row md:flex-col items-center justify-center md:items-start md:justify-start gap-12 text-sm">
-          <li class="custom-text underline">
-            <a href="./mark/text.html">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M319.33-246.67h321.34v-66.66H319.33v66.66Zm0-166.66h321.34V-480H319.33v66.67ZM226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-666.66q0-27 19.83-46.84Q199.67-880 226.67-880H574l226 226v507.33q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm314-542.67v-190.66h-314v666.66h506.66v-476H540.67Zm-314-190.66v190.66-190.66 666.66-666.66Z"/></svg>
-            </a>
-          </li>
-          <li class="custom-text underline">
-            <a href="./mark/photos.html">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M350-384.67h394l-130.67-174-99.33 130-66-84.66-98 128.66Zm-70 171.34q-27 0-46.83-19.84Q213.33-253 213.33-280v-533.33q0-27 19.84-46.84Q253-880 280-880h533.33q27 0 46.84 19.83Q880-840.33 880-813.33V-280q0 27-19.83 46.83-19.84 19.84-46.84 19.84H280Zm0-66.67h533.33v-533.33H280V-280ZM146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-600h66.67v600h600V-80h-600ZM280-813.33V-280v-533.33Z"/></svg>
-            </a>
-          </li>
-        </ul>
+    <!-- nav links -->
+    <nav class="flex items-center bg-white bg-opacity-50 rounded-xl px-4 py-2 text-xs lowercase justify-between">
+      <div class="space-x-2">
+        <a href="#">tiktok</a>
+        <span>|</span>
+        <a href="#">insta</a>
+        <span>|</span>
+        <a href="#">pintrest</a>
+        <span>|</span>
+        <a href="#">comms</a>
       </div>
+      <div class="flex space-x-3">
+        <i class="fas fa-globe"></i>
+        <i class="fas fa-rss"></i>
+        <i class="fas fa-home"></i>
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+    </nav>
 
- 
+    <!-- main grid -->
+    <section class="grid grid-cols-3 gap-4">
+      <!-- coluna esquerda -->
+      <div class="space-y-4">
+        <img src="perfil1.jpg" alt="Perfil" class="rounded-lg">
+        <div>
+          <h2 class="text-2xl font-bold italic">KIARA</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae vel, deleniti, qui eligendi quibusdam.<br>(˶⁻.⁻˶)☆</p>
+        </div>
+        <div class="bg-white bg-opacity-50 p-3 rounded-lg border border-pastel">
+          <p>✧˚༚ yum PINK!!, art, editing,…</p>
+        </div>
+      </div>
+      <!-- coluna central -->
+      <div class="space-y-4">
+        <div class="bg-white bg-opacity-50 p-3 rounded-lg border border-pastel">
+          <p>(˵ •̀ᄆ•́ ˵) ew, yuk! fish, bugs…</p>
+        </div>
+        <div class="flex justify-center">
+          <button class="px-6 py-2 border-2 border-pastel rounded-full uppercase text-xs">°· ｡ ʚ ᴜʚ ·°</button>
+        </div>
+        <div class="bg-white bg-opacity-50 py-4 px-2 rounded-lg border border-pastel">
+          <h3 class="font-semibold lowercase">other</h3>
+          <p class="">(˵ ˚ᆺ˚˵) solo/other…</p>
+        </div>
+        <img src="perfil2.jpg" alt="Arte" class="rounded-lg">
+      </div>
+      <!-- coluna direita -->
+      <div class="space-y-4">
+        <div class="bg-white bg-opacity-50 p-3 rounded-lg border border-pastel">
+          <h3 class="font-semibold lowercase">fandoms</h3>
+          <p>bandori, pj, sekai…</p>
+        </div>
+        <div class="border-2 border-dashed border-pastel rounded-lg p-4 flex justify-center">
+          <button class="uppercase">bias</button>
+        </div>
+        <div class="bg-white bg-opacity-50 p-3 rounded-lg border border-pastel">
+          <h3 class="font-semibold lowercase">shows</h3>
+          <p>(˶ᵔᵕᵔ˶)</p>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-<!-- Script do tema -->
-<script>
-  const themeToggle = document.getElementById('theme-toggle');
-  const iconSun = document.getElementById('icon-sun');
-  const iconMoon = document.getElementById('icon-moon');
-  const body = document.getElementById('body');
-
-  themeToggle.addEventListener('click', () => {
-    body.classList.toggle('bg-pink-50');
-    body.classList.toggle('bg-neutral-900');
-    body.classList.toggle('text-black');
-    body.classList.toggle('text-white');
-
-    iconSun.classList.toggle('hidden');
-    iconMoon.classList.toggle('hidden');
-  });
-</script>
-
+    <!-- footer pequena -->
+    <footer class="flex justify-center text-xs">
+      . . . ˚✧
+    </footer>
+  </div>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
